@@ -1,7 +1,30 @@
-export default function Navbar() {
+const Navbar = () => {
   return (
-    <nav>
-      <h2>Claudine</h2>
-    </nav>
+   <nav className="fixed top-0 left-0 w-full bg-[#0d1117] text-white border-b border-gray-800 z-50">
+  <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-6">
+
+    {/* Logo + Name */}
+    <div className="hidden md:flex items-center gap-3">
+      <div className="bg-purple-600 w-10 h-10 flex items-center justify-center rounded-lg font-bold">
+        R
+      </div>
+      <span className="text-xl font-semibold">Claudine</span>
+    </div>
+
+    {/* Nav Links */}
+    <ul className="flex gap-10 text-sm font-medium">
+      <li className="hover:text-purple-400 cursor-pointer">Home</li>
+      <li className="hover:text-purple-400 cursor-pointer hidden md:flex">About</li>
+      <li className="hover:text-purple-400 cursor-pointer">Skills</li>
+      <li className="hover:text-purple-400 cursor-pointer">Certifications</li>
+      <li className="hover:text-purple-400 cursor-pointer">Awards</li>
+      <li className="hover:text-purple-400 cursor-pointer">Experience</li>
+      <li className="hover:text-purple-400 cursor-pointer">Contact</li>
+    </ul>
+
+  </div>
+</nav>
   );
-}
+};
+
+export default Navbar;
