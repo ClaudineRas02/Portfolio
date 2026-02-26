@@ -3,16 +3,16 @@ const Card = ({ icon, title, description }) => {
     <div
       className="group bg-[#111827] border border-gray-800 rounded-2xl p-6 flex flex-col gap-4
                  transition-all duration-300
-                 hover:border-purple-500/40
-                 hover:shadow-lg hover:shadow-purple-500/10"
+                 hover:border-[#e63946]/40
+                 hover:shadow-lg hover:shadow-[#e63946]/10"
     >
       <div className="flex items-center gap-4">
         <div
           className="w-12 h-12 rounded-xl
-                     bg-purple-600
+                     bg-[#e63946]
                      flex items-center justify-center
                      text-white text-xl
-                     shadow-md shadow-purple-500/20
+                     shadow-md shadow-[#e63946]/20
                      group-hover:scale-110
                      transition-transform duration-300"
         >

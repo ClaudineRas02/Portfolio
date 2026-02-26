@@ -5,7 +5,7 @@ const Navbar = () => {
 
     {/* Logo + Name */}
     <div className="hidden md:flex items-center gap-3">
-      <div className="bg-purple-600 w-10 h-10 flex items-center justify-center rounded-lg font-bold">
+      <div className="bg-[#e63946] w-10 h-10 flex items-center justify-center rounded-lg font-bold">
         R
       </div>
       <span className="text-xl font-semibold">Claudine</span>
@@ -13,13 +13,13 @@ const Navbar = () => {
 
     {/* Nav Links */}
     <ul className="flex gap-10 text-sm font-medium">
-      <li className="hover:text-purple-400 cursor-pointer">Home</li>
-      <li className="hover:text-purple-400 cursor-pointer hidden md:flex">About</li>
-      <li className="hover:text-purple-400 cursor-pointer">Skills</li>
-      <li className="hover:text-purple-400 cursor-pointer">Certifications</li>
-      <li className="hover:text-purple-400 cursor-pointer">Awards</li>
-      <li className="hover:text-purple-400 cursor-pointer">Experience</li>
-      <li className="hover:text-purple-400 cursor-pointer">Contact</li>
+      <li className="hover:text-[#e63946] cursor-pointer">Home</li>
+      <li className="hover:text-[#e63946] cursor-pointer hidden md:flex">About</li>
+      <li className="hover:text-[#e63946] cursor-pointer">Skills</li>
+      <li className="hover:text-[#e63946] cursor-pointer">Certifications</li>
+      <li className="hover:text-[#e63946] cursor-pointer">Awards</li>
+      <li className="hover:text-[#e63946] cursor-pointer">Experience</li>
+      <li className="hover:text-[#e63946] cursor-pointer">Contact</li>
     </ul>
 
   </div>
