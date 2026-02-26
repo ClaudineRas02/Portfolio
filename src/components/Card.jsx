@@ -1,4 +1,10 @@
-const Card = ({ icon, title, description, className = "" }) => {
+const Card = ({
+  icon,
+  title,
+  description,
+  className = "",
+  descriptionClassName = "",
+}) => {
   return (
     <div
       className={`group bg-[#111827] border border-gray-800 rounded-2xl p-6 flex flex-col gap-4
@@ -22,7 +28,9 @@ const Card = ({ icon, title, description, className = "" }) => {
         <h3 className="text-white font-semibold text-lg">{title}</h3>
       </div>
 
-      <p className="text-gray-400 text-sm leading-relaxed">{description}</p>
+      <p className={`text-gray-400 text-sm leading-relaxed ${descriptionClassName}`}>
+        {description}
+      </p>
     </div>
   );
 };

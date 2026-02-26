@@ -23,10 +23,53 @@ export default function About() {
           </h2>
           <Card
             className="h-full flex-1"
+            descriptionClassName="text-base md:text-lg leading-8 text-gray-300"
             icon={<UserRound />}
             title="Who Am I"
-            description=""
-            />
+            description={
+              <>
+                I am a {" "}
+                <span className="about-title-sour-gummy font-bold text-[#e63946]">
+                third-year</span>{" "}
+                 Computer Science student at ENI Fianarantsoa with a strong
+                interest in systems architecture, backend development, and{" "}
+                <span className="about-title-sour-gummy font-bold text-[#e63946]">
+                  infrastructure engineering
+                </span>
+                . I enjoy understanding how applications work behind the scenes, from{" "}
+                <span className="about-title-sour-gummy font-bold text-[#e63946]">
+                  Linux systems
+                </span>
+                , networking, and databases to backend logic and{" "}
+                <span className="about-title-sour-gummy font-bold text-[#e63946]">
+                  automation
+                </span>
+                .
+                <br />
+                <br />
+                I ranked in the{" "}
+                <span className="about-title-sour-gummy font-bold text-[#e63946]">
+                  Top 10 nationwide
+                </span>{" "}
+                in the Huawei ICT Competition (National Level) on my first attempt.
+                This experience sharpened my discipline, resilience, and ability to
+                perform under pressure.
+                <br />
+                <br />
+                I am also a finalist in our school&apos;s 2025{" "}
+                <span className="about-title-sour-gummy font-bold text-[#e63946]">
+                 competitive programming
+                 </span>{" "}
+                tournaments, which strengthened my problem-solving and analytical
+                thinking. Currently, I am developing practical skills in Linux,
+                backend, and DevOps practices, aiming to design{" "}
+                <span className="about-title-sour-gummy font-bold text-[#e63946]">
+                  reliable, scalable systems
+                </span>{" "}
+                for real-world environments.
+              </>
+            }
+          />
         </div>
       </div>
     </section>
