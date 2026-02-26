@@ -13,8 +13,16 @@ const Navbar = () => {
 
     {/* Nav Links */}
     <ul className="flex gap-10 text-sm font-medium">
-      <li className="hover:text-[#e63946] cursor-pointer">Home</li>
-      <li className="hover:text-[#e63946] cursor-pointer hidden md:flex">About</li>
+      <li>
+        <a href="#home" className="hover:text-[#e63946] cursor-pointer">
+          Home
+        </a>
+      </li>
+      <li className="hidden md:flex">
+        <a href="#about" className="hover:text-[#e63946] cursor-pointer">
+          About
+        </a>
+      </li>
       <li className="hover:text-[#e63946] cursor-pointer">Skills</li>
       <li className="hover:text-[#e63946] cursor-pointer">Certifications</li>
       <li className="hover:text-[#e63946] cursor-pointer">Awards</li>

@@ -9,8 +9,8 @@ const Hero = () => {
     Hello, I'm
   </p>
 
-  <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-[#e63946] mb-4 leading-tight">
-    RASAMIMANANA Claudine
+  <h1 className="about-title-sour-gummy text-2xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-[#e63946] mb-4 leading-tight">
+    RASAMIMANANA Feno Hanitra Claudine
   </h1>
 
   <h2 className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-8">

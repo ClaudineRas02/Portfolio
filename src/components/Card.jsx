@@ -1,10 +1,10 @@
-const Card = ({ icon, title, description }) => {
+const Card = ({ icon, title, description, className = "" }) => {
   return (
     <div
-      className="group bg-[#111827] border border-gray-800 rounded-2xl p-6 flex flex-col gap-4
+      className={`group bg-[#111827] border border-gray-800 rounded-2xl p-6 flex flex-col gap-4
                  transition-all duration-300
                  hover:border-[#e63946]/40
-                 hover:shadow-lg hover:shadow-[#e63946]/10"
+                 hover:shadow-lg hover:shadow-[#e63946]/10 ${className}`}
     >
       <div className="flex items-center gap-4">
         <div
