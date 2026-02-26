@@ -1,20 +1,35 @@
 import { UserRound } from "lucide-react";
 import Card from "../components/Card";
+import Icons from "../components/Icons";
 import mePic from "../assets/mePic.png";
-
+import linkedinIcon from "../assets/icons/linkedin.png";
+import mail from "../assets/icons/message.png";
+import github from "../assets/icons/github.png";
 export default function About() {
+  {/*icon list for icon components */}
+  const socialIcons = [
+    { src: github, alt: "GitHub", href: "https://github.com/ClaudineRas02" },
+    { src: mail, alt: "Email", href: "mailto:hanitraclaudine@gmail.com.email@example.com" },
+    { src: linkedinIcon, alt: "LinkedIn", href: "https://www.linkedin.com/in/claudine-rasamimanana-a205a5379/" },
+  ];
+
   return (
     <section
       id="about"
       className="min-h-screen scroll-mt-24 bg-[#0d1117] text-white px-6 pt-24 md:pt-28 pb-6"
     >
       <div className="max-w-6xl w-full mx-auto grid md:grid-cols-2 gap-6 md:gap-8 items-stretch h-[calc(100vh-7.5rem)] md:h-[calc(100vh-9rem)]">
-        <div className="h-full overflow-hidden flex items-center justify-center">
-          <img
-            src={mePic}
-            alt="Claudine portrait"
-            className="h-[80%] w-auto max-w-full object-contain"
-          />
+        <div className="h-full flex flex-col items-center justify-end gap-3 py-2">
+          <div className="h-[84%] overflow-hidden flex items-end justify-center">
+            <img
+              src={mePic}
+              alt="Claudine portrait"
+              className="h-full w-auto max-w-full object-contain"
+            />
+          </div>
+
+          <Icons icons={socialIcons} />
+
         </div>
 
         <div className="h-full flex flex-col pt-2 md:pt-4">
