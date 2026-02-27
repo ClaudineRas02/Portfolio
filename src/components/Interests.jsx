@@ -1,13 +1,13 @@
 import Card from "./Card";
 import { Server, Database, Cloud } from "lucide-react";
 
-export default function Skills() {
+export default function Interests() {
   return (
-    <section className="bg-[#0d1117] text-white py-20 px-6">
+    <section className="bg-[#0d1117] py-20 px-6">
       <div className="max-w-6xl mx-auto">
         
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          My Skills
+        <h2 className="about-title-sour-gummy text-3xl md:text-4xl text-[#e63946] text-center mb-12">
+          Interests & Knowledges
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -29,10 +29,8 @@ export default function Skills() {
             title="DevOps"
             description="Deploying and managing applications with CI/CD pipelines."
           />
-
         </div>
       </div>
     </section>
   );
 }
-

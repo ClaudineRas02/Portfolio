@@ -5,7 +5,6 @@ export default function Resume() {
   return (
     <section className="bg-[#0d1117] text-white pt-6 pb-16 px-6">
       <div className="max-w-4xl mx-auto">
-        
         <div className="grid md:grid-cols-2 gap-8">
           {/* My interests in tech and my passion to teach and mentor*/}
           <Card
@@ -21,7 +20,6 @@ export default function Resume() {
             description="I enjoy mentoring, joining tech clubs, attending talks, 
                         and competing in programming challenges to learn, grow, and share knowledge with others."
           />
-    
         </div>
       </div>
     </section>

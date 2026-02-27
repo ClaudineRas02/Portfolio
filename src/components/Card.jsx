@@ -4,6 +4,7 @@ const Card = ({
   description,
   className = "",
   descriptionClassName = "",
+  children,
 }) => {
   return (
     <div
@@ -31,6 +32,8 @@ const Card = ({
       <p className={`text-gray-400 text-sm leading-relaxed ${descriptionClassName}`}>
         {description}
       </p>
+
+      {children ? <div className="flex flex-wrap gap-2">{children}</div> : null}
     </div>
   );
 };

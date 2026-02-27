@@ -4,7 +4,9 @@ import Icons from "../components/Icons";
 import mePic from "../assets/mePic.png";
 import linkedinIcon from "../assets/icons/linkedin.png";
 import mail from "../assets/icons/message.png";
-import github from "../assets/icons/github.png";
+import github from "../assets/icons/github.png"
+
+
 export default function About() {
   {/*icon list for icon components */}
   const socialIcons = [
@@ -16,7 +18,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="min-h-screen scroll-mt-24 bg-[#0d1117] text-white px-6 pt-24 md:pt-28 pb-6"
+      className="snap-start min-h-screen scroll-mt-24 bg-[#0d1117] text-white px-6 pt-24 md:pt-28 pb-6"
     >
       <div className="max-w-6xl w-full mx-auto grid md:grid-cols-2 gap-6 md:gap-8 items-stretch h-[calc(100vh-7.5rem)] md:h-[calc(100vh-9rem)]">
         <div className="h-full flex flex-col items-center justify-end gap-3 py-2">
@@ -29,7 +31,6 @@ export default function About() {
           </div>
 
           <Icons icons={socialIcons} />
-
         </div>
 
         <div className="h-full flex flex-col pt-2 md:pt-4">

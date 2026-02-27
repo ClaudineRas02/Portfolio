@@ -5,7 +5,7 @@ import Mybutton from "../components/Mybutton";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#0d1117]">
+    <section id="home" className="snap-start min-h-screen scroll-mt-24 bg-[#0d1117]">
       <Navbar />
 
       <main className="pt-8 md:pt-20">
@@ -14,12 +14,12 @@ export default function Home() {
           <Resume />
         </div>
 
-        <section className="bg-[#0d1117] flex justify-center gap-6 pb-20">
+        <section className="bg-[#0d1117] flex justify-center gap-6 pb-10">
           <Mybutton content={"Let's Connect →"} />
           <Mybutton content={"Download CV"} />
         </section>
       </main>
 
-    </div>
+    </section>
   );
 }

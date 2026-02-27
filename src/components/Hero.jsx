@@ -1,10 +1,8 @@
 const Hero = () => {
   return (
     <section
-  id="home"
   className="flex flex-col items-center justify-center text-center pt-32 pb-10 bg-[#0d1117] text-white px-4"
 >
-
   <p className="text-sm sm:text-base text-gray-400 mb-2">
     Hello, I'm
   </p>

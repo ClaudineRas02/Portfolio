@@ -23,7 +23,11 @@ const Navbar = () => {
           About
         </a>
       </li>
-      <li className="hover:text-[#e63946] cursor-pointer">Skills</li>
+      <li className="hover:text-[#e63946] cursor-pointer"> 
+        <a href="#tools">
+          Skills
+        </a>
+      </li>
       <li className="hover:text-[#e63946] cursor-pointer">Certifications</li>
       <li className="hover:text-[#e63946] cursor-pointer">Awards</li>
       <li className="hover:text-[#e63946] cursor-pointer">Experience</li>
