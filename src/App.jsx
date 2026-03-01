@@ -4,7 +4,7 @@ import Skills from "./pages/Skills";
   
 function  App(){
   return (
-    <main className="h-screen overflow-y-auto snap-y snap-mandatory">
+    <main className="h-screen overflow-y-auto snap-y snap-proximity md:snap-mandatory">
       <Home />
       <About />
       <Skills/>

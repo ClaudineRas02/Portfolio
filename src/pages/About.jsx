@@ -20,25 +20,24 @@ export default function About() {
       id="about"
       className="snap-start min-h-screen scroll-mt-24 bg-[#0d1117] text-white px-6 pt-24 md:pt-28 pb-6"
     >
-      <div className="max-w-6xl w-full mx-auto grid md:grid-cols-2 gap-6 md:gap-8 items-stretch h-[calc(100vh-7.5rem)] md:h-[calc(100vh-9rem)]">
-        <div className="h-full flex flex-col items-center justify-end gap-3 py-2">
-          <div className="h-[84%] overflow-hidden flex items-end justify-center">
+      <div className="max-w-6xl w-full mx-auto grid md:grid-cols-2 gap-6 md:gap-8 items-start">
+        <div className="flex flex-col items-center justify-end gap-3 py-2">
+          <div className="w-full max-w-xs sm:max-w-sm md:max-w-full overflow-hidden flex items-end justify-center">
             <img
               src={mePic}
               alt="Claudine portrait"
-              className="h-full w-auto max-w-full object-contain"
+              className="h-auto w-auto max-w-full max-h-[320px] sm:max-h-[420px] md:max-h-[560px] object-contain"
             />
           </div>
 
           <Icons icons={socialIcons} />
         </div>
 
-        <div className="h-full flex flex-col pt-2 md:pt-4">
+        <div className="flex flex-col pt-2 md:pt-4">
           <h2 className="about-title-sour-gummy mb-4 md:mb-5 text-4xl md:text-5xl text-[#e63946]">
             About Me
           </h2>
           <Card
-            className="h-full flex-1"
             descriptionClassName="text-base md:text-lg leading-8 text-gray-300"
             icon={<UserRound />}
             title="Who Am I"
