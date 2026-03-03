@@ -1,6 +1,7 @@
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
+import Certificates from "./pages/Certificates";
   
 function  App(){
   return (
@@ -8,6 +9,7 @@ function  App(){
       <Home />
       <About />
       <Skills/>
+      <Certificates />
     </main>
   )
 }
