@@ -2,6 +2,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
 import Certificates from "./pages/Certificates";
+import Awards from "./pages/Awards";
   
 function  App(){
   return (
@@ -10,6 +11,7 @@ function  App(){
       <About />
       <Skills/>
       <Certificates />
+      <Awards />
     </main>
   )
 }
