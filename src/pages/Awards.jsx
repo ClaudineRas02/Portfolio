@@ -44,7 +44,7 @@ export default function Awards() {
             {awards.map((award) => (
               <div
                 key={award.id}
-                className="grid grid-cols-[84px_54px_minmax(0,1fr)] items-start gap-x-4 md:grid-cols-[108px_52px_minmax(0,1fr)] md:gap-x-5"
+                className="grid grid-cols-[84px_64px_minmax(0,1fr)] items-start gap-x-4 md:grid-cols-[108px_52px_minmax(0,1fr)] md:gap-x-5"
               >
                 <div className="pt-3 text-right">
                   <span className="about-title-sour-gummy text-3xl text-[#f8e7cc] md:text-4xl">
@@ -60,7 +60,7 @@ export default function Awards() {
                   icon={award.icon}
                   title={award.title}
                   description={award.description}
-                  className="max-w-150 border-gray-700 bg-[#131726]"
+                  className="w-full max-w-1450 border-gray-700 bg-[#131726]"
                   descriptionClassName="text-gray-200"
                 />
               </div>
