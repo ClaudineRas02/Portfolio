@@ -32,6 +32,21 @@ const experiences = [
       { title: "Teamwork", subtitle: "Peer collaboration" },
     ],
   },
+  {
+    id: "c3lf-mentor-treasurer",
+    role: "Mentor & Treasurer",
+    company: "C3LF - Club Linux et Logiciels Libres de Fianarantsoa",
+    period: "2025 - Present",
+    summary:
+      "Supporting students in discovering open source, Linux, and collaborative development practices. I help organize club activities, mentor members on practical projects, and contribute to the club's structure as treasurer.",
+    icon: <Briefcase size={22} />,
+    highlights: [
+      { title: "Mentorship", subtitle: "Open-source onboarding" },
+      { title: "Linux", subtitle: "Hands-on guidance" },
+      { title: "Community", subtitle: "Workshops & events" },
+      { title: "Treasury", subtitle: "Club financial follow-up" },
+    ],
+  },
 ];
 
 export default function Experience() {
@@ -42,7 +57,7 @@ export default function Experience() {
     >
       <div className="mx-auto max-w-6xl">
         <h2 className="about-title-sour-gummy text-center text-5xl text-[#e63946] md:text-6xl">
-          Experience
+          Experiences
         </h2>
 
         <div className="mt-12 space-y-8">
