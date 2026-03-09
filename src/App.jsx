@@ -3,6 +3,7 @@ import About from "./pages/About";
 import Skills from "./pages/Skills";
 import Certificates from "./pages/Certificates";
 import Awards from "./pages/Awards";
+import Experience from "./pages/Experience";
   
 function  App(){
   return (
@@ -12,6 +13,7 @@ function  App(){
       <Skills/>
       <Certificates />
       <Awards />
+      <Experience />
     </main>
   )
 }
