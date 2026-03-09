@@ -29,7 +29,7 @@ export default function Awards() {
       className="snap-start min-h-screen scroll-mt-24 bg-[#0d1117] px-6 pb-16 pt-24 text-white"
     >
       <div className="mx-auto max-w-6xl">
-        <h2 className="about-title-sour-gummy text-center text-5xl text-[#f8e7cc] md:text-6xl">
+        <h2 className="about-title-sour-gummy text-center text-5xl text-[#e63946] md:text-6xl">
           Awards
         </h2>
 
