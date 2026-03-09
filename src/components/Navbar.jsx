@@ -35,7 +35,6 @@ const Navbar = () => {
         <a href="#awards">Awards</a>
       </li>
       <li className="hover:text-[#e63946] cursor-pointer">Experience</li>
-      <li className="hover:text-[#e63946] cursor-pointer">Contact</li>
     </ul>
 
   </div>

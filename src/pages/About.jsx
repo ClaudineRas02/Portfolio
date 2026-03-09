@@ -3,7 +3,6 @@ import Card from "../components/Card";
 import Icons from "../components/Icons";
 import mePic from "../assets/mePic.png";
 import linkedinIcon from "../assets/icons/linkedin.png";
-import mail from "../assets/icons/message.png";
 import github from "../assets/icons/github.png"
 
 
@@ -11,7 +10,6 @@ export default function About() {
   {/*icon list for icon components */}
   const socialIcons = [
     { src: github, alt: "GitHub", href: "https://github.com/ClaudineRas02" },
-    { src: mail, alt: "Email", href: "mailto:hanitraclaudine@gmail.com.email@example.com" },
     { src: linkedinIcon, alt: "LinkedIn", href: "https://www.linkedin.com/in/claudine-rasamimanana-a205a5379/" },
   ];
 
