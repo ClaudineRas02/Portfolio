@@ -13,14 +13,14 @@ export default function Post({
         onClick={onImageClick}
         className="group block w-full cursor-zoom-in md:block"
       >
-        <div className="flex md:block">
+        <div className="flex flex-col md:block">
           <img
             src={image}
             alt={alt}
-            className="h-full min-h-[180px] w-[44%] object-cover transition-transform duration-200 group-hover:scale-[1.01] md:h-44 md:min-h-0 md:w-full"
+            className="h-48 w-full object-cover transition-transform duration-200 group-hover:scale-[1.01] md:h-44 md:min-h-0 md:w-full"
           />
 
-          <div className="flex min-h-[180px] w-[56%] flex-col justify-center p-4 text-left md:min-h-[16rem] md:w-full md:p-5 md:text-center">
+          <div className="flex min-h-[180px] w-full flex-col justify-center p-4 text-left md:min-h-[16rem] md:w-full md:p-5 md:text-center">
             <h3 className="about-title-sour-gummy text-2xl leading-tight md:text-3xl">
               {title}
             </h3>
