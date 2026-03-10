@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
   
 function  App(){
   return (
-    <main className="h-screen overflow-y-auto snap-y snap-proximity">
+    <main className="h-screen overflow-y-auto snap-none md:snap-y md:snap-proximity">
       <Home />
       <About />
       <Skills/>

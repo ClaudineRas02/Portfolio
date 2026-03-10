@@ -44,10 +44,10 @@ export default function Awards() {
             {awards.map((award) => (
               <div
                 key={award.id}
-                className="grid grid-cols-[84px_64px_minmax(0,1fr)] items-start gap-x-4 md:grid-cols-[108px_52px_minmax(0,1fr)] md:gap-x-5"
+                className="grid grid-cols-[68px_52px_minmax(0,1fr)] items-start gap-x-3 md:grid-cols-[108px_52px_minmax(0,1fr)] md:gap-x-5"
               >
                 <div className="pt-3 text-right">
-                  <span className="about-title-sour-gummy text-3xl text-[#f8e7cc] md:text-4xl">
+                  <span className="about-title-sour-gummy text-2xl text-[#f8e7cc] sm:text-3xl md:text-4xl">
                     {award.year}
                   </span>
                 </div>
