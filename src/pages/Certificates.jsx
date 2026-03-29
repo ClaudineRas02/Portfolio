@@ -2,9 +2,29 @@ import { useEffect, useState } from "react";
 import Post from "../components/Post";
 import pythonCert from "../assets/certs/python.png";
 import problemSolvingCert from "../assets/certs/problemSolving.png";
-import programmingCert from "../assets/certs/programming.png";
+import devopsCert from "../assets/certs/devops.png";
+import linuxCert from '../assets/certs/linux.png'
+import linuxScore from '../assets/certs/score.png'
 
 const certificates = [
+  {
+    id: "Linux Essentials",
+    image: linuxCert,
+    alt: "Linux Essentials Certification by Linux Professional Institute",
+    title: "Linux Fundamentals",
+    description:
+      "International certification issued by the Linux Professional Institute, demonstrating strong foundations in Linux systems, command-line usage, file management, and basic security.",
+    scoreImage: linuxScore,
+    scoreAlt: "Linux Essentials score report",
+  },
+   {
+    id: "DevOps",
+    image: devopsCert,
+    alt: "DevOps and CI/CD Training Certificate",
+    title: "DevOps Fundamentals",
+    description:
+      "Introduces core DevOps concepts including CI/CD pipelines, version control with GitLab, and automated application deployment. Highlighting team coordination challenges."
+  },
   {
     id: "problem-solving",
     image: problemSolvingCert,
@@ -18,15 +38,7 @@ const certificates = [
     ),
     description:
       "Covers fundamental problem-solving techniques including algorithmic thinking, pattern recognition, and logical modeling.Focused on building strong analytical foundations through structured practice and applied exercises.",
-  },
-  {
-    id: "programming-foundations",
-    image: programmingCert,
-    alt: "Certificate in programming fundamentals",
-    title: "Programming Foundations",
-    description:
-      "Demonstrates solid understanding of core programming concepts such as data structures, algorithms, and clean code principles.Reinforced through consistent hands-on practice and problem-solving challenges",
-  },
+  } ,
     {
     id: "python-development",
     image: pythonCert,
@@ -62,7 +74,7 @@ export default function Certificates() {
             Certifications
           </h2>
 
-          <div className="grid justify-items-center gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <div className="grid justify-items-center gap-6 md:grid-cols-2 xl:grid-cols-4">
             {certificates.map((certificate) => (
               <Post
                 key={certificate.id}
@@ -73,7 +85,22 @@ export default function Certificates() {
                     alt: certificate.alt,
                   })
                 }
-              />
+              >
+                {certificate.scoreImage ? (
+                  <button
+                    type="button"
+                    className="rounded-full border border-[#e63946] px-4 py-2 text-xs font-semibold uppercase tracking-wide text-[#e63946] transition hover:bg-[#e63946] hover:text-white"
+                    onClick={() =>
+                      setSelectedImage({
+                        src: certificate.scoreImage,
+                        alt: certificate.scoreAlt,
+                      })
+                    }
+                  >
+                    See score
+                  </button>
+                ) : null}
+              </Post>
             ))}
           </div>
         </div>
