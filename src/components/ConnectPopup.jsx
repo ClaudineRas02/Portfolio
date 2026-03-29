@@ -2,9 +2,9 @@ import {
   Facebook,
   Github,
   Linkedin,
-  Globe,
+  Mail,
   Phone,
-  X,
+  X
 } from "lucide-react";
 import Contact from "./Contact";
 
@@ -59,6 +59,12 @@ export default function ConnectPopup({ onClose }) {
           icon={<Phone size={18} />}
           label="WhatsApp"
           sublabel="+261 32 30 775 91"
+        />
+        <Contact
+          icon={<Mail size={18} />}
+          label="Mail"
+          sublabel="hanitraclaudine"
+          href="mailto:hanitraclaudine@gmail.com"
         />
       </div>
     </section>
