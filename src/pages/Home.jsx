@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import Resume from "../components/Resume";
 import Mybutton from "../components/Mybutton";
 import ConnectPopup from "../components/ConnectPopup";
+import { Download } from "lucide-react";
 
 export default function Home() {
   const [isConnectOpen, setIsConnectOpen] = useState(false);
@@ -23,7 +24,13 @@ export default function Home() {
             content={"Let's Connect →"}
             onClick={() => setIsConnectOpen(true)}
           />
-          <Mybutton content={"Download CV"} />
+          <a
+            href="cv/CV_Claudine.pdf"
+            className="inline-flex items-center gap-2 px-5 py-2 sm:px-6 sm:py-3 bg-[#e63946] hover:bg-[#e63946] rounded-lg transition"
+          >
+            <span>Download CV</span>
+            <Download size={18} />
+          </a>
         </section>
       </main>
 
