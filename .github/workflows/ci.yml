@@ -2,19 +2,59 @@ name: CI
 
 on:
   push:
-    branches: 
-      - develop
+    branches:
       - feature/**
+      - develop
+      - main
+
+  pull_request:
+    branches:
+      - develop
+      - main
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  lint:
+    name: Lint code #code syntax and logic analysis
+    runs-on: ubuntu-latest #img utilsé sur code runner pour le job lint
 
     steps:
-      - uses: actions/checkout@v4
+      - name: checkout repo (runner)
+        uses: actions/checkout@v4
 
-      - name: install
+      - name: install dependancies
         run: npm ci
 
-      - name: lint
+      - name: run ESlint
         run: npm run lint
+
+  test:
+    name: Run tests #test de code via jest
+    runs-on: ubuntu-latest #img utilsé sur code runner pour le job test
+    needs: lint #job executé si lint succès
+
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v4
+
+      - name: install dependancies
+        run: npm ci
+
+      - name: run Jests tests
+        run: npm test --if-present
+
+  sonar:
+    name: sonarQube code analysis
+    runs-on: ubuntu-latest #img utilsé sur code runner pour le job sonar
+    needs: test #job executé si test succès
+
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v4
+
+      - name: install dependancies
+        run: npm ci
+
+      - name: code scan
+        uses: SonarSource/sonarqube-scan-action@v2
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}

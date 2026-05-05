@@ -10,7 +10,10 @@ export default function Home() {
   const [isConnectOpen, setIsConnectOpen] = useState(false);
 
   return (
-    <section id="home" className="snap-start min-h-screen scroll-mt-24 bg-[#0d1117]">
+    <section
+      id="home"
+      className="snap-start min-h-screen scroll-mt-24 bg-[#0d1117]"
+    >
       <Navbar />
 
       <main className="pt-8 md:pt-20">
@@ -36,7 +39,7 @@ export default function Home() {
 
       {isConnectOpen ? (
         <div
-          className="fixed inset-0 z-[120] flex items-center justify-center bg-black/70 px-4"
+          className="fixed inset-0 z-120 flex items-center justify-center bg-black/70 px-4"
           onClick={() => setIsConnectOpen(false)}
           role="presentation"
         >
@@ -45,7 +48,6 @@ export default function Home() {
           </div>
         </div>
       ) : null}
-
     </section>
   );
 }
