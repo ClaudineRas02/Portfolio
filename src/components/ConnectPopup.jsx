@@ -1,16 +1,9 @@
-import {
-  Facebook,
-  Github,
-  Linkedin,
-  Mail,
-  Phone,
-  X
-} from "lucide-react";
+import { Facebook, Github, Linkedin, Mail, Phone, X } from "lucide-react";
 import Contact from "./Contact";
 
 export default function ConnectPopup({ onClose }) {
   return (
-    <section className="w-full max-w-xl rounded-[28px] border border-white/10 bg-gradient-to-br from-[#0f0f19] via-[#12121f] to-[#0f1019] p-6 text-white shadow-[0_30px_60px_rgba(0,0,0,0.45)]">
+    <section className="w-full max-w-xl rounded-[28px] border border-white/10 bg-linear-to-br from-[#0f0f19] via-[#12121f] to-[#0f1019] p-6 text-white shadow-[0_30px_60px_rgba(0,0,0,0.45)]">
       <header className="flex items-start justify-between gap-4">
         <div className="flex items-center gap-4">
           <div className="flex h-14 w-14 items-center justify-center rounded-full border border-[#e63946] text-lg font-semibold text-[#e63946]">

@@ -34,9 +34,9 @@ export default function Awards() {
         </h2>
 
         <div className="relative mx-auto mt-14 w-full max-w-5xl">
-          <div className="absolute bottom-5 left-[96px] top-0 w-px bg-gray-700 md:left-[120px]" />
+          <div className="absolute bottom-5 left-24 top-0 w-px bg-gray-700 md:left-30" />
           <ArrowDown
-            className="absolute bottom-0 left-[96px] -translate-x-1/2 text-gray-400 md:left-[120px]"
+            className="absolute bottom-0 left-24 -translate-x-1/2 text-gray-400 md:left-30"
             size={18}
           />
 
