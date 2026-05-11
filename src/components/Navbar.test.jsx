@@ -16,7 +16,7 @@ describe("Navbar", () => {
 
   it("should highlight active link based on hash", () => {
     window.location.hash = "#home";
-    const { rerender } = render(<Navbar />);
+    render(<Navbar />);
     const homeLink = screen.getByText("Home").closest("a");
     expect(homeLink).toHaveClass("text-[#e63946]");
   });
