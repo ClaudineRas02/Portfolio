@@ -1,4 +1,4 @@
-import { Facebook, Github, Linkedin, Mail, Phone, X } from "lucide-react";
+import { FaceBook, GitHub, LinkedIn, Mail, Phone, X } from "lucide-react";
 import Contact from "./Contact";
 
 export default function ConnectPopup({ onClose }) {
@@ -30,20 +30,20 @@ export default function ConnectPopup({ onClose }) {
 
       <div className="mt-6 grid gap-4 sm:grid-cols-2">
         <Contact
-          icon={<Facebook size={18} />}
+          icon={<FaceBook size={18} />}
           label="Facebook"
           sublabel="Claudine R."
           href="https://www.facebook.com/claudine.rasamimanana"
         />
         <Contact
-          icon={<Linkedin size={18} />}
+          icon={<LinkedIn size={18} />}
           label="LinkedIn"
           sublabel="24 relations"
           href="https://www.linkedin.com/in/claudinerasamimanana/"
           className="border-[#1f6feb]/40 bg-[#0b1f36] hover:border-[#1f6feb]"
         />
         <Contact
-          icon={<Github size={18} />}
+          icon={<GitHub size={18} />}
           label="GitHub"
           sublabel="claudine-r"
           href="https://github.com/ClaudineRas02"
