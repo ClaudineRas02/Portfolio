@@ -78,7 +78,7 @@ export default function Experience() {
               {experience.highlights.map((item) => (
                 <div
                   key={`${experience.id}-${item.title}`}
-                  className="w-full max-w-[240px] rounded-xl border border-gray-700 bg-[#171c2e] px-4 py-3 text-left sm:w-[calc(50%-0.75rem)] sm:max-w-[220px] lg:w-[calc(33.333%-0.9rem)] lg:max-w-[210px]"
+                  className="w-full max-w-60 rounded-xl border border-gray-700 bg-[#171c2e] px-4 py-3 text-left sm:w-[calc(50%-0.75rem)] sm:max-w-55 lg:w-[calc(33.333%-0.9rem)] lg:max-w-52.5"
                 >
                  
                     <div>

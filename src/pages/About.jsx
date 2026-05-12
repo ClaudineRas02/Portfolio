@@ -24,7 +24,7 @@ export default function About() {
             <img
               src={mePic}
               alt="Claudine portrait"
-              className="h-auto w-auto max-w-full max-h-[320px] sm:max-h-[420px] md:max-h-[560px] object-contain"
+              className="h-auto w-auto max-w-full max-h-80 sm:max-h-105 md:max-h-140 object-contain"
             />
           </div>
 

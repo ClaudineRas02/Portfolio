@@ -3,8 +3,8 @@ import Post from "../components/Post";
 import pythonCert from "../assets/certs/python.png";
 import problemSolvingCert from "../assets/certs/problemSolving.png";
 import devopsCert from "../assets/certs/devops.png";
-import linuxCert from '../assets/certs/linux.png'
-import linuxScore from '../assets/certs/score.png'
+import linuxCert from "../assets/certs/linux.png";
+import linuxScore from "../assets/certs/score.png";
 
 const certificates = [
   {
@@ -17,13 +17,13 @@ const certificates = [
     scoreImage: linuxScore,
     scoreAlt: "Linux Essentials score report",
   },
-   {
+  {
     id: "DevOps",
     image: devopsCert,
     alt: "DevOps and CI/CD Training Certificate",
     title: "DevOps Fundamentals",
     description:
-      "Introduces core DevOps concepts including CI/CD pipelines, version control with GitLab, and automated application deployment. Highlighting team coordination challenges."
+      "Introduces core DevOps concepts including CI/CD pipelines, version control with GitLab, and automated application deployment. Highlighting team coordination challenges.",
   },
   {
     id: "problem-solving",
@@ -38,8 +38,8 @@ const certificates = [
     ),
     description:
       "Covers fundamental problem-solving techniques including algorithmic thinking, pattern recognition, and logical modeling.Focused on building strong analytical foundations through structured practice and applied exercises.",
-  } ,
-    {
+  },
+  {
     id: "python-development",
     image: pythonCert,
     alt: "Certificate in Python programming",
@@ -108,7 +108,7 @@ export default function Certificates() {
 
       {selectedImage ? (
         <div
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/85 px-4"
+          className="fixed inset-0 z-100 flex items-center justify-center bg-black/85 px-4"
           onClick={() => setSelectedImage(null)}
           role="presentation"
         >

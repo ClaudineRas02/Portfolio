@@ -2,19 +2,82 @@ name: CI
 
 on:
   push:
-    branches: 
-      - develop
+    branches:
       - feature/**
+      - develop
+      - main
+
+  pull_request:
+    branches:
+      - develop
+      - main
+
+env:
+  # GitHub Actions: opt into running JavaScript actions on Node.js 24 now
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  lint:
+    name: Lint code #code syntax et logic analysis
+    runs-on: ubuntu-latest #img utilsé sur code runner pour le job lint
 
     steps:
-      - uses: actions/checkout@v4
+      - name: checkout repo (runner)
+        uses: actions/checkout@v4
 
-      - name: install
+      - name: setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: install dependancies
         run: npm ci
 
-      - name: lint
+      - name: run ESlint
         run: npm run lint
+
+  test:
+    name: Run tests #test de code via jest
+    runs-on: ubuntu-latest #img utilsé sur code runner pour le job test
+    needs: lint #job executé si lint succès
+
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v4
+
+      - name: setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: install dependancies
+        run: npm ci
+
+      - name: run Jests tests
+        run: npm test --if-present
+
+  sonar:
+    name: sonarQube code analysis
+    runs-on: ubuntu-latest #img utilsé sur code runner pour le job sonar
+    needs: test #job executé si test succès
+
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v4
+
+      - name: setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: install dependancies
+        run: npm ci
+
+      - name: code scan
+        uses: SonarSource/sonarqube-scan-action@v2
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: https://sonarcloud.io

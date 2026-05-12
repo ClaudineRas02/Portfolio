@@ -22,14 +22,20 @@ export default function Post({
           />
         </button>
 
-        <div className="flex min-h-[180px] w-full flex-col justify-center gap-3 p-4 text-left md:min-h-[16rem] md:w-full md:p-5 md:text-center">
+        <div className="flex min-h-45 w-full flex-col justify-center gap-3 p-4 text-left md:min-h-64 md:w-full md:p-5 md:text-center">
           <div>
             <h3 className="about-title-sour-gummy text-2xl leading-tight md:text-3xl">
               {title}
             </h3>
-            <p className="mt-2 text-sm leading-relaxed text-gray-400">{description}</p>
+            <p className="mt-2 text-sm leading-relaxed text-gray-400">
+              {description}
+            </p>
           </div>
-          {children ? <div className="flex justify-start md:justify-center">{children}</div> : null}
+          {children ? (
+            <div className="flex justify-start md:justify-center">
+              {children}
+            </div>
+          ) : null}
         </div>
       </div>
     </article>
