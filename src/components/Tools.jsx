@@ -1,5 +1,5 @@
 import Card from "./Card";
-import { Container, FileTerminal, Server } from "lucide-react";
+import { Container, FileTerminal, Server, ShieldCheck } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 
 const tools = [
@@ -17,25 +17,35 @@ const tools = [
   },
 
   {
-    icon: <FileTerminal />,
-    title: "Automation & Scripting",
-    description:
-      "Infrastructure automation, deployment scripts, and process orchestration.",
-    chips: ["Bash/Shell", "Python", "YAML/JSON"],
-  },
-  {
     icon: <Server />,
     title: "Backend Development",
     description:
       "Backend API development, server-side logic, and scalable service architecture.",
     chips: ["Node.js", "PHP", "Python"],
   },
+
+  {
+    icon: <ShieldCheck />,
+    title: "Testing & Code Quality",
+    description:
+      "Unit tests, linting, and automated code analysis to keep changes safe and maintainable.",
+    chips: ["Jest", "React Testing Library", "ESLint", "SonarCloud"],
+  },
+
   {
     icon: <Container />,
     title: "Docker & Containerization",
     description:
       "Container orchestration, multi-stage builds, and security best practices.",
     chips: ["Docker", "Docker Compose", "Docker compose"],
+  },
+
+  {
+    icon: <FileTerminal />,
+    title: "Automation & Scripting",
+    description:
+      "Infrastructure automation, deployment scripts, and process orchestration.",
+    chips: ["Bash/Shell", "Python", "YAML/JSON"],
   },
 ];
 
