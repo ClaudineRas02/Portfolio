@@ -3,14 +3,19 @@ import Card from "../components/Card";
 import Icons from "../components/Icons";
 import mePic from "../assets/mePic.png";
 import linkedinIcon from "../assets/icons/linkedin.png";
-import github from "../assets/icons/github.png"
-
+import github from "../assets/icons/github.png";
 
 export default function About() {
-  {/*icon list for icon components */}
+  {
+    /*icon list for icon components */
+  }
   const socialIcons = [
     { src: github, alt: "GitHub", href: "https://github.com/ClaudineRas02" },
-    { src: linkedinIcon, alt: "LinkedIn", href: "https://www.linkedin.com/in/claudine-rasamimanana-a205a5379/" },
+    {
+      src: linkedinIcon,
+      alt: "LinkedIn",
+      href: "https://www.linkedin.com/in/claudine-rasamimanana-a205a5379/",
+    },
   ];
 
   return (
@@ -41,15 +46,17 @@ export default function About() {
             title="Who Am I"
             description={
               <>
-                I am a {" "}
+                I am a{" "}
                 <span className="about-title-sour-gummy font-bold text-[#e63946]">
-                third-year</span>{" "}
-                 Computer Science student at ENI Fianarantsoa with a strong
+                  third-year
+                </span>{" "}
+                Computer Science student at ENI Fianarantsoa with a strong
                 interest in systems architecture, backend development, and{" "}
                 <span className="about-title-sour-gummy font-bold text-[#e63946]">
                   infrastructure engineering
                 </span>
-                . I enjoy understanding how applications work behind the scenes, from{" "}
+                . I enjoy understanding how applications work behind the scenes,
+                from{" "}
                 <span className="about-title-sour-gummy font-bold text-[#e63946]">
                   Linux systems
                 </span>
@@ -59,27 +66,30 @@ export default function About() {
                 </span>
                 .
                 <br />
-                <br />
-                I ranked in the{" "}
+                <br />I ranked in the{" "}
                 <span className="about-title-sour-gummy font-bold text-[#e63946]">
                   Top 10 nationwide
                 </span>{" "}
-                in the Huawei ICT Competition (National Level) on my first attempt.
-                This experience sharpened my discipline, resilience, and ability to
-                perform under pressure.
+                in the Huawei ICT Competition (National Level) on my first
+                attempt. This experience sharpened my discipline, resilience,
+                and ability to perform under pressure.
                 <br />
-                <br />
-                I am also a finalist in our school&apos;s 2025{" "}
+                <br />I am also a finalist in our school&apos;s 2025{" "}
                 <span className="about-title-sour-gummy font-bold text-[#e63946]">
-                 competitive programming
-                 </span>{" "}
-                tournaments, which strengthened my problem-solving and analytical
-                thinking. Currently, I am developing practical skills in Linux,
-                backend, and DevOps practices, aiming to design{" "}
-                <span className="about-title-sour-gummy font-bold text-[#e63946]">
-                  reliable, scalable systems
+                  competitive programming
                 </span>{" "}
-                for real-world environments.
+                tournaments, which strengthened my problem-solving and
+                analytical thinking. Currently, I am developing practical skills
+                in Linux, backend, and DevOps practices, aiming to design <br />
+                <br />
+                And in may 2026, I earned{" "}
+                <span className="about-title-sour-gummy font-bold text-[#e63946]">
+                  2nd place in algorithmics
+                </span>{" "}
+                in a competition organized by EMIT STEM HUB, reinforcing my
+                ability to solve complex problems under time pressure.
+                <br />
+                <br />
               </>
             }
           />
