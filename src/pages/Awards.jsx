@@ -2,24 +2,31 @@ import { ArrowDown, Award, Medal } from "lucide-react";
 import Card from "../components/Card";
 
 const awards = [
-
   {
-    id: "algo-2024",
-    year: "2024",
+    id: "algo-2025",
+    year: "2025",
     icon: <Medal size={22} />,
-    title: "ENI intern AlgoBattle",
+    title: "ENI Fianarantsoa AlgoBattle",
     description:
-    "Finalist in the ENI Internal Competitive Programming Tournament (L2+), ranking among the top performers in a competition of 20+ highly skilled participants."
+      "Finalist in the ENI Internal Competitive Programming Tournament (L2+), ranking among the top performers in a competition of 20+ highly skilled participants.",
   },
 
-   {
+  {
     id: "huawei-2025",
     year: "2025",
     icon: <Award size={22} />,
     title: "Huawei ICT Competition",
     description:
-        "Top 10 nationwide on my first attempt, after completing 1000+ pages of networking and systems study with practical labs, among 100+ competitors from universities across Madagascar."
-},
+      "Top 10 nationwide on my first attempt, after completing 1000+ pages of networking and systems study with practical labs, among 100+ competitors from universities across Madagascar.",
+  },
+  {
+    id: "emit-stem-hub-algo-2026",
+    year: "2026",
+    icon: <Medal size={22} />,
+    title: "Algorithmics Competition (EMIT STEM HUB)",
+    description:
+      "2nd place in an algorithmics competition organized by EMIT STEM HUB, highlighting consistent problem-solving performance under competitive constraints.",
+  },
 ];
 
 export default function Awards() {
