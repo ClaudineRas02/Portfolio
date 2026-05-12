@@ -1,9 +1,10 @@
 import Card from "./Card";
-import { Github, Container, FileTerminal, Server } from "lucide-react";
+import { Container, FileTerminal, Server } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 
 const tools = [
-      {
-    icon: <Github />,
+  {
+    icon: <FaGithub />,
     title: "Git & Github",
     description:
       "Advanced Git workflows, GitHub Actions, and collaborative development practices.",
@@ -20,11 +21,7 @@ const tools = [
     title: "Automation & Scripting",
     description:
       "Infrastructure automation, deployment scripts, and process orchestration.",
-    chips: [
-        "Bash/Shell",
-        "Python",
-        "YAML/JSON"
-    ],
+    chips: ["Bash/Shell", "Python", "YAML/JSON"],
   },
   {
     icon: <Server />,
@@ -38,11 +35,7 @@ const tools = [
     title: "Docker & Containerization",
     description:
       "Container orchestration, multi-stage builds, and security best practices.",
-    chips: [
-    "Docker",
-    "Docker Compose",
-    "Docker compose"
-    ],
+    chips: ["Docker", "Docker Compose", "Docker compose"],
   },
 ];
 
@@ -59,7 +52,11 @@ export default function Tools() {
             <Card
               key={tool.title}
               icon={tool.icon}
-              title={<span className="about-title-sour-gummy text-white">{tool.title}</span>}
+              title={
+                <span className="about-title-sour-gummy text-white">
+                  {tool.title}
+                </span>
+              }
               description={tool.description}
               descriptionClassName="text-gray-300"
             >
