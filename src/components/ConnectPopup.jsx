@@ -1,4 +1,5 @@
-import { FaceBook, GitHub, LinkedIn, Mail, Phone, X } from "lucide-react";
+import { FaFacebook, FaGithub, FaLinkedin, FaPhone } from "react-icons/fa6";
+import { IoIosMail } from "react-icons/io";
 import Contact from "./Contact";
 
 export default function ConnectPopup({ onClose }) {
@@ -19,7 +20,7 @@ export default function ConnectPopup({ onClose }) {
           onClick={onClose}
           className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/10 text-gray-300 transition hover:border-[#e63946]/40 hover:text-[#e63946]"
         >
-          <X size={16} />
+          x
         </button>
       </header>
 
@@ -30,31 +31,31 @@ export default function ConnectPopup({ onClose }) {
 
       <div className="mt-6 grid gap-4 sm:grid-cols-2">
         <Contact
-          icon={<FaceBook size={18} />}
+          icon={<FaFacebook size={18} />}
           label="Facebook"
           sublabel="Claudine R."
           href="https://www.facebook.com/claudine.rasamimanana"
         />
         <Contact
-          icon={<LinkedIn size={18} />}
+          icon={<FaLinkedin size={18} />}
           label="LinkedIn"
           sublabel="24 relations"
           href="https://www.linkedin.com/in/claudinerasamimanana/"
           className="border-[#1f6feb]/40 bg-[#0b1f36] hover:border-[#1f6feb]"
         />
         <Contact
-          icon={<GitHub size={18} />}
+          icon={<FaGithub size={18} />}
           label="GitHub"
           sublabel="claudine-r"
           href="https://github.com/ClaudineRas02"
         />
         <Contact
-          icon={<Phone size={18} />}
+          icon={<FaPhone size={18} />}
           label="WhatsApp"
           sublabel="+261 32 30 775 91"
         />
         <Contact
-          icon={<Mail size={18} />}
+          icon={<IoIosMail size={18} />}
           label="Mail"
           sublabel="hanitraclaudine"
           href="mailto:hanitraclaudine@gmail.com"
