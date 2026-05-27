@@ -39,7 +39,7 @@ export default function ConnectPopup({ onClose }) {
         <Contact
           icon={<FaLinkedin size={18} />}
           label="LinkedIn"
-          sublabel="24 relations"
+          sublabel="76 relations"
           href="https://www.linkedin.com/in/claudinerasamimanana/"
           className="border-[#1f6feb]/40 bg-[#0b1f36] hover:border-[#1f6feb]"
         />

@@ -32,7 +32,7 @@ export default function About() {
               alt="Claudine portrait"
               loading="lazy"
               decoding="async"
-              className="h-auto w-auto max-w-full max-h-[34rem] object-contain sm:max-h-[40rem] md:max-h-[45rem] lg:max-h-[48rem]"
+              className="h-auto w-auto max-w-full max-h-[36rem] object-contain sm:max-h-[42rem] md:max-h-[47rem] lg:max-h-[50rem]"
             />
           </div>
 
@@ -86,9 +86,7 @@ export default function About() {
                     competitive programming
                   </span>{" "}
                   tournaments, which strengthened my problem-solving and
-                  analytical thinking. Currently, I am developing practical
-                  skills in Linux, backend, and DevOps practices, aiming to
-                  design <br />
+                  analytical thinking.
                   <br />
                   And in may 2026, I earned{" "}
                   <span className="about-title-sour-gummy font-bold text-[#e63946]">
@@ -98,6 +96,8 @@ export default function About() {
                   ability to solve complex problems under time pressure.
                   <br />
                   <br />
+                  Currently, I am developing practical skills in Linux, backend,
+                  and DevOps practices. <br />
                 </>
               }
             />
