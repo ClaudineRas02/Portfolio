@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import Post from "../components/Post";
-import pythonCert from "../assets/certs/python.png";
-import problemSolvingCert from "../assets/certs/problemSolving.png";
-import devopsCert from "../assets/certs/devops.png";
-import linuxCert from "../assets/certs/linux.png";
-import linuxScore from "../assets/certs/score.png";
+import Reveal from "../components/Reveal";
+import pythonCert from "../assets/certs/python.webp";
+import problemSolvingCert from "../assets/certs/problemSolving.webp";
+import devopsCert from "../assets/certs/devops.webp";
+import linuxCert from "../assets/certs/linux.webp";
+import linuxScore from "../assets/certs/score.webp";
 
 const certificates = [
   {
@@ -70,37 +71,41 @@ export default function Certificates() {
         className="snap-start min-h-screen scroll-mt-24 bg-[#0d1117] px-6 pb-12 pt-24 text-white"
       >
         <div className="mx-auto max-w-6xl">
-          <h2 className="about-title-sour-gummy mb-10 text-center text-4xl text-[#e63946] md:text-5xl">
+          <Reveal
+            as="h2"
+            className="about-title-sour-gummy mb-10 text-center text-4xl text-[#e63946] md:text-5xl"
+          >
             Certifications
-          </h2>
+          </Reveal>
 
           <div className="grid justify-items-center gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {certificates.map((certificate) => (
-              <Post
-                key={certificate.id}
-                {...certificate}
-                onImageClick={() =>
-                  setSelectedImage({
-                    src: certificate.image,
-                    alt: certificate.alt,
-                  })
-                }
-              >
-                {certificate.scoreImage ? (
-                  <button
-                    type="button"
-                    className="rounded-full border border-[#e63946] px-4 py-2 text-xs font-semibold uppercase tracking-wide text-[#e63946] transition hover:bg-[#e63946] hover:text-white"
-                    onClick={() =>
-                      setSelectedImage({
-                        src: certificate.scoreImage,
-                        alt: certificate.scoreAlt,
-                      })
-                    }
-                  >
-                    See score
-                  </button>
-                ) : null}
-              </Post>
+            {certificates.map((certificate, index) => (
+              <Reveal key={certificate.id} delay={index * 90}>
+                <Post
+                  {...certificate}
+                  onImageClick={() =>
+                    setSelectedImage({
+                      src: certificate.image,
+                      alt: certificate.alt,
+                    })
+                  }
+                >
+                  {certificate.scoreImage ? (
+                    <button
+                      type="button"
+                      className="rounded-full border border-[#e63946] px-4 py-2 text-xs font-semibold uppercase tracking-wide text-[#e63946] transition hover:bg-[#e63946] hover:text-white"
+                      onClick={() =>
+                        setSelectedImage({
+                          src: certificate.scoreImage,
+                          alt: certificate.scoreAlt,
+                        })
+                      }
+                    >
+                      See score
+                    </button>
+                  ) : null}
+                </Post>
+              </Reveal>
             ))}
           </div>
         </div>
@@ -124,6 +129,7 @@ export default function Certificates() {
           <img
             src={selectedImage.src}
             alt={selectedImage.alt}
+            decoding="async"
             className="max-h-[88vh] w-auto max-w-full rounded-xl border border-gray-600 shadow-2xl"
             onClick={(event) => event.stopPropagation()}
           />
