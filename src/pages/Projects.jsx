@@ -33,16 +33,16 @@ const projects = [
     challenge:
       "Build a scalable backend platform helping young people discover digital careers, organizations, and learning opportunities through a centralized and community-driven system.",
     contribution: [
-      "Designed and developed backend features using Node.js, Express, and PostgreSQL with a layered architecture (routes, services, models, middleware).",
-      "Implemented APIs for authentication, publications, organizations, comments, feedback systems, RSS feeds, and profile management.",
+      "Designed and developed backend features using Node.js, Express, and MySQL with a layered architecture (routes, services, models, middleware).",
+      "Implemented REST APIs for authentication, publications, organizations, comments, feedback systems, and profile management.",
       "Improved backend reliability with ESLint standards, Jest unit tests, error handling practices, and SonarCloud static analysis.",
       "Built CI/CD pipelines with GitLab CI for linting, testing, quality analysis, and Docker image generation.",
-      "Worked on deployment-oriented infrastructure using Docker containers and HAProxy load balancing in a Linux network lab environment.",
+      "Worked on deployment-oriented infrastructure using HAProxy load balancing, keepalived, nginx, NFS in a Linux network lab environment.",
     ],
     impact: [
-      "Delivered a more maintainable and production-oriented backend architecture for the platform.",
-      "Automated quality checks and container build workflows to improve development consistency and deployment readiness.",
-      "Strengthened understanding of backend scalability, DevOps workflows, and infrastructure integration.",
+      "Strengthened understanding of secure backend development, especially authentication with JSON Web Tokens (JWT), role-based access control, and protected API routes.",
+      "Improved collaboration workflow between backend and frontend development through API integration, testing, and debugging.",
+      "Explored Linux network lab environments using HAProxy and shared storage systems, learning the challenges of synchronization, consistency, and multi-server infrastructure management.",
     ],
     githubUrl: "https://gitlab.com/numicamp-infra",
     chips: [
@@ -67,13 +67,13 @@ const projects = [
     challenge:
       "Certificate workflows can become difficult to follow when generation, expiration, revocation, and CA hierarchy are managed manually.",
     contribution: [
-      "Designed a mobile-first certificate management experience for Root CA, Intermediate CA, and SSL/TLS certificate workflows.",
-      "Integrated certificate lifecycle concepts including generation, expiration monitoring, revocation, and secure PKI organization.",
-      "Structured the project around practical security needs and clear mobile navigation.",
+      "Developed backend APIs for SSL/TLS certificate generation using OpenSSL integration with Node.js and Express.",
+      "Implemented Root CA and Intermediate CA management, certificate signing workflows, import/export, and certificate file upload/download handling.",
+      "Built features for certificate listing, CA trust chain visualization, revocation management, and expiration tracking using PostgreSQL.",
     ],
     impact: [
-      "Made certificate management concepts easier to understand and interact with from a mobile interface.",
-      "Created a foundation for future improvements around alerts, secure storage, and certificate inventory tracking.",
+      "Improved understanding of TLS/SSL certificates, PKI architecture, certificate revocation, CSR workflows, and CA trust chains.",
+      "Gained practical experience using OpenSSL with Node.js to generate, sign, store, and manage certificates through backend APIs.",
     ],
     githubUrl: "https://github.com/ClaudineRas02/pki-backend",
     chips: ["React Native", "Node.js", "Express", "PostgreSQL", "OpenSSL"],
