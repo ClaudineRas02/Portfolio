@@ -39,19 +39,6 @@ const tools = [
     chips: ["Jest", "React Testing Library", "ESLint", "SonarCloud"],
   },
   {
-    icon: <BrickWallShield />,
-    title: "Web Security",
-    description:
-      "Implementation of secure coding practices to prevent common web attacks and improve API security.",
-    chips: [
-      "OWASP",
-      "XSS Protection",
-      "SQL Injection Prevention",
-      "JWT Security",
-    ],
-  },
-
-  {
     icon: <Container />,
     title: "Docker & Containerization",
     description:
