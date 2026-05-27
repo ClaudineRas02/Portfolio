@@ -1,5 +1,6 @@
 import { ArrowDown, Award, Medal } from "lucide-react";
 import Card from "../components/Card";
+import Reveal from "../components/Reveal";
 
 const awards = [
   {
@@ -36,9 +37,12 @@ export default function Awards() {
       className="snap-start min-h-screen scroll-mt-24 bg-[#0d1117] px-6 pb-16 pt-24 text-white"
     >
       <div className="mx-auto max-w-6xl">
-        <h2 className="about-title-sour-gummy text-center text-5xl text-[#e63946] md:text-6xl">
+        <Reveal
+          as="h2"
+          className="about-title-sour-gummy text-center text-5xl text-[#e63946] md:text-6xl"
+        >
           Awards
-        </h2>
+        </Reveal>
 
         <div className="relative mx-auto mt-14 w-full max-w-5xl">
           <div className="absolute bottom-5 left-24 top-0 w-px bg-gray-700 md:left-30" />
@@ -48,9 +52,10 @@ export default function Awards() {
           />
 
           <div className="space-y-10">
-            {awards.map((award) => (
-              <div
+            {awards.map((award, index) => (
+              <Reveal
                 key={award.id}
+                delay={index * 100}
                 className="grid grid-cols-[68px_52px_minmax(0,1fr)] items-start gap-x-3 md:grid-cols-[108px_52px_minmax(0,1fr)] md:gap-x-5"
               >
                 <div className="pt-3 text-right">
@@ -70,7 +75,7 @@ export default function Awards() {
                   className="w-full max-w-1450 border-gray-700 bg-[#131726]"
                   descriptionClassName="text-gray-200"
                 />
-              </div>
+              </Reveal>
             ))}
           </div>
         </div>

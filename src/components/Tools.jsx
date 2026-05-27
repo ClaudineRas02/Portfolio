@@ -55,7 +55,7 @@ const tools = [
     title: "Docker & Containerization",
     description:
       "Container orchestration, multi-stage builds, and security best practices.",
-    chips: ["Docker", "Docker Compose", "Docker compose"],
+    chips: ["Docker", "Docker Compose", "Container Security"],
   },
 
   {
@@ -71,32 +71,36 @@ export default function Tools() {
   return (
     <section className="bg-[#0d1117] text-white pt-0 pb-20 px-6">
       <div className="max-w-6xl mx-auto">
-        <h2 className="about-title-sour-gummy text-3xl md:text-4xl text-[#e63946] text-center mb-12">
+        <Reveal
+          as="h2"
+          className="about-title-sour-gummy text-3xl md:text-4xl text-[#e63946] text-center mb-12"
+        >
           Tools & Technologies
-        </h2>
+        </Reveal>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
-          {tools.map((tool) => (
-            <Card
-              key={tool.title}
-              icon={tool.icon}
-              title={
-                <span className="about-title-sour-gummy text-white">
-                  {tool.title}
-                </span>
-              }
-              description={tool.description}
-              descriptionClassName="text-gray-300"
+          {tools.map((tool, index) => (
+            <Reveal key={tool.title} delay={index * 90}>
+              <Card
+                icon={tool.icon}
+                title={
+                  <span className="about-title-sour-gummy text-white">
+                    {tool.title}
+                  </span>
+                }
+                description={tool.description}
+                descriptionClassName="text-gray-300"
             >
-              {tool.chips.map((chip) => (
-                <span
-                  key={chip}
-                  className="text-xs text-gray-300 bg-[#1f2937] border border-gray-700 px-3 py-1 rounded-lg transition-colors duration-200 hover:border-[#e63946]/40 hover:text-white"
-                >
-                  {chip}
-                </span>
-              ))}
-            </Card>
+                {tool.chips.map((chip) => (
+                  <span
+                    key={chip}
+                    className="text-xs text-gray-300 bg-[#1f2937] border border-gray-700 px-3 py-1 rounded-lg transition-colors duration-200 hover:border-[#e63946]/40 hover:text-white"
+                  >
+                    {chip}
+                  </span>
+                ))}
+              </Card>
+            </Reveal>
           ))}
         </div>
       </div>

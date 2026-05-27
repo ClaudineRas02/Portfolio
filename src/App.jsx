@@ -1,20 +1,24 @@
+import { lazy, Suspense } from "react";
 import Home from "./pages/Home";
-import About from "./pages/About";
-import Skills from "./pages/Skills";
-import Certificates from "./pages/Certificates";
-import Awards from "./pages/Awards";
-import Experience from "./pages/Experience";
 import Footer from "./components/Footer";
+
+const About = lazy(() => import("./pages/About"));
+const Skills = lazy(() => import("./pages/Skills"));
+const Certificates = lazy(() => import("./pages/Certificates"));
+const Awards = lazy(() => import("./pages/Awards"));
+const Experience = lazy(() => import("./pages/Experience"));
   
 function  App(){
   return (
     <main className="h-screen overflow-y-auto snap-none md:snap-y md:snap-proximity">
       <Home />
-      <About />
-      <Skills/>
-      <Certificates />
-      <Awards />
-      <Experience />
+      <Suspense fallback={<div className="min-h-screen bg-[#0d1117]" />}>
+        <About />
+        <Skills/>
+        <Certificates />
+        <Awards />
+        <Experience />
+      </Suspense>
       <Footer />
     </main>
   )

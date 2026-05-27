@@ -7,8 +7,8 @@ export default function Post({
   children,
 }) {
   return (
-    <article className="w-full max-w-3xl overflow-hidden rounded-[1.6rem] border border-gray-700 bg-[#0d1117] text-white shadow-[0_0_0_1px_rgba(230,57,70,0.2)] md:max-w-[320px] md:block">
-      <div className="flex flex-col md:block">
+    <article className="h-full w-full max-w-3xl overflow-hidden rounded-[1.6rem] border border-gray-700 bg-[#0d1117] text-white shadow-[0_0_0_1px_rgba(230,57,70,0.2)] md:max-w-[320px] md:block">
+      <div className="flex h-full flex-col md:block">
         <button
           type="button"
           aria-label={`Open ${alt} in full view`}
@@ -18,6 +18,8 @@ export default function Post({
           <img
             src={image}
             alt={alt}
+            loading="lazy"
+            decoding="async"
             className="h-48 w-full object-cover transition-transform duration-200 group-hover:scale-[1.01] md:h-44 md:min-h-0 md:w-full"
           />
         </button>
