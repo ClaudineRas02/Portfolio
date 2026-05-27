@@ -1,5 +1,11 @@
 import Card from "./Card";
-import { Container, FileTerminal, Server, ShieldCheck } from "lucide-react";
+import {
+  BrickWallShield,
+  Container,
+  FileTerminal,
+  Server,
+  ShieldCheck,
+} from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 
 const tools = [
@@ -30,6 +36,18 @@ const tools = [
     description:
       "Unit tests, linting, and automated code analysis to keep changes safe and maintainable.",
     chips: ["Jest", "React Testing Library", "ESLint", "SonarCloud"],
+  },
+  {
+    icon: <BrickWallShield />,
+    title: "Web Security",
+    description:
+      "Implementation of secure coding practices to prevent common web attacks and improve API security.",
+    chips: [
+      "OWASP",
+      "XSS Protection",
+      "SQL Injection Prevention",
+      "JWT Security",
+    ],
   },
 
   {
