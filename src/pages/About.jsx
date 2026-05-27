@@ -32,7 +32,7 @@ export default function About() {
               alt="Claudine portrait"
               loading="lazy"
               decoding="async"
-              className="h-auto w-auto max-w-full max-h-[34rem] object-contain sm:max-h-[40rem] md:max-h-[45rem] lg:max-h-[48rem]"
+              className="h-auto w-auto max-w-full max-h-[36rem] object-contain sm:max-h-[42rem] md:max-h-[47rem] lg:max-h-[50rem]"
             />
           </div>
 
