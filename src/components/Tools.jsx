@@ -7,6 +7,7 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
+import Reveal from "./Reveal";
 
 const tools = [
   {
@@ -90,7 +91,7 @@ export default function Tools() {
                 }
                 description={tool.description}
                 descriptionClassName="text-gray-300"
-            >
+              >
                 {tool.chips.map((chip) => (
                   <span
                     key={chip}
