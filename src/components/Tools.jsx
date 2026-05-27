@@ -1,7 +1,13 @@
 import Card from "./Card";
-import Reveal from "./Reveal";
-import { Container, FileTerminal, Server, ShieldCheck } from "lucide-react";
+import {
+  BrickWallShield,
+  Container,
+  FileTerminal,
+  Server,
+  ShieldCheck,
+} from "lucide-react";
 import { FaGithub } from "react-icons/fa";
+import Reveal from "./Reveal";
 
 const tools = [
   {
@@ -31,6 +37,18 @@ const tools = [
     description:
       "Unit tests, linting, and automated code analysis to keep changes safe and maintainable.",
     chips: ["Jest", "React Testing Library", "ESLint", "SonarCloud"],
+  },
+  {
+    icon: <BrickWallShield />,
+    title: "Web Security",
+    description:
+      "Implementation of secure coding practices to prevent common web attacks and improve API security.",
+    chips: [
+      "OWASP",
+      "XSS Protection",
+      "SQL Injection Prevention",
+      "JWT Security",
+    ],
   },
 
   {
@@ -73,7 +91,7 @@ export default function Tools() {
                 }
                 description={tool.description}
                 descriptionClassName="text-gray-300"
-            >
+              >
                 {tool.chips.map((chip) => (
                   <span
                     key={chip}
