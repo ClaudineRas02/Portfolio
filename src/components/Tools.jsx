@@ -1,11 +1,5 @@
 import Card from "./Card";
-import {
-  BrickWallShield,
-  Container,
-  FileTerminal,
-  Server,
-  ShieldCheck,
-} from "lucide-react";
+import { Container, FileTerminal, Server, ShieldCheck } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import Reveal from "./Reveal";
 
