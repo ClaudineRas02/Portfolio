@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1779900146666" clover="3.2.0">
+  <project timestamp="1779900146667" name="All files">
+    <metrics statements="42" coveredstatements="41" conditionals="25" coveredconditionals="24" methods="20" coveredmethods="20" elements="87" coveredelements="85" complexity="0" loc="42" ncloc="42" packages="2" files="9" classes="9"/>
+    <package name="components">
+      <metrics statements="36" coveredstatements="35" conditionals="23" coveredconditionals="22" methods="15" coveredmethods="15"/>
+      <file name="Card.jsx" path="/home/claudine/Documents/DEVOPS/Projects/Portfolio/src/components/Card.jsx">
+        <metrics statements="2" coveredstatements="2" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="9" count="22" type="stmt"/>
+      </file>
+      <file name="ConnectPopup.jsx" path="/home/claudine/Documents/DEVOPS/Projects/Portfolio/src/components/ConnectPopup.jsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="11" type="stmt"/>
+      </file>
+      <file name="Contact.jsx" path="/home/claudine/Documents/DEVOPS/Projects/Portfolio/src/components/Contact.jsx">
+        <metrics statements="1" coveredstatements="1" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="8" count="55" type="stmt"/>
+      </file>
+      <file name="Hero.jsx" path="/home/claudine/Documents/DEVOPS/Projects/Portfolio/src/components/Hero.jsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="8" type="stmt"/>
+      </file>
+      <file name="Mybutton.jsx" path="/home/claudine/Documents/DEVOPS/Projects/Portfolio/src/components/Mybutton.jsx">
+        <metrics statements="1" coveredstatements="1" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="2" count="11" type="stmt"/>
+      </file>
+      <file name="Navbar.jsx" path="/home/claudine/Documents/DEVOPS/Projects/Portfolio/src/components/Navbar.jsx">
+        <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="5" coveredmethods="5"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="18" type="stmt"/>
+        <line num="6" count="18" type="stmt"/>
+        <line num="7" count="8" type="stmt"/>
+        <line num="8" count="11" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="8" type="stmt"/>
+        <line num="12" count="8" type="stmt"/>
+        <line num="13" count="8" type="stmt"/>
+        <line num="16" count="18" type="stmt"/>
+        <line num="17" count="126" type="stmt"/>
+        <line num="21" count="18" type="stmt"/>
+      </file>
+      <file name="Resume.jsx" path="/home/claudine/Documents/DEVOPS/Projects/Portfolio/src/components/Resume.jsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="8" type="stmt"/>
+      </file>
+      <file name="Reveal.jsx" path="/home/claudine/Documents/DEVOPS/Projects/Portfolio/src/components/Reveal.jsx">
+        <metrics statements="17" coveredstatements="16" conditionals="13" coveredconditionals="12" methods="4" coveredmethods="4"/>
+        <line num="9" count="66" type="stmt"/>
+        <line num="10" count="66" type="stmt"/>
+        <line num="12" count="66" type="stmt"/>
+        <line num="13" count="23" type="stmt"/>
+        <line num="15" count="23" type="cond" truecount="1" falsecount="1"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="19" count="23" type="stmt"/>
+        <line num="23" count="23" type="cond" truecount="4" falsecount="0"/>
+        <line num="24" count="17" type="stmt"/>
+        <line num="25" count="17" type="stmt"/>
+        <line num="28" count="6" type="stmt"/>
+        <line num="30" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="38" count="6" type="stmt"/>
+        <line num="40" count="6" type="stmt"/>
+        <line num="43" count="66" type="stmt"/>
+      </file>
+    </package>
+    <package name="pages">
+      <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5"/>
+      <file name="Home.jsx" path="/home/claudine/Documents/DEVOPS/Projects/Portfolio/src/pages/Home.jsx">
+        <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5"/>
+        <line num="10" count="8" type="stmt"/>
+        <line num="12" count="8" type="stmt"/>
+        <line num="28" count="3" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
