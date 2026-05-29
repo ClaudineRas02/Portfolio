@@ -6,45 +6,45 @@ import Reveal from "./Reveal";
 const tools = [
   {
     icon: <FaGithub />,
-    title: "Git & Github",
+    title: "Git & GitHub",
     description:
-      "Advanced Git workflows, GitHub Actions, and collaborative development practices.",
+      "Workflows Git avancés, GitHub Actions et bonnes pratiques de développement collaboratif.",
     chips: [
       "Git",
       "GitHub Actions",
-      "Branch Policies",
-      "Collaborative Workflows",
+      "Politiques de branches",
+      "Workflows collaboratifs",
     ],
   },
 
   {
     icon: <Server />,
-    title: "Backend Development",
+    title: "Développement backend",
     description:
-      "Backend API development, server-side logic, and scalable service architecture.",
+      "Développement d'API backend, logique serveur et architecture de services scalable.",
     chips: ["Node.js", "PHP", "Python"],
   },
 
   {
     icon: <ShieldCheck />,
-    title: "Testing & Code Quality",
+    title: "Tests & qualité de code",
     description:
-      "Unit tests, linting, and automated code analysis to keep changes safe and maintainable.",
+      "Tests unitaires, linting et analyse automatique pour garder un code fiable et maintenable.",
     chips: ["Jest", "React Testing Library", "ESLint", "SonarCloud"],
   },
   {
     icon: <Container />,
-    title: "Docker & Containerization",
+    title: "Docker & conteneurisation",
     description:
-      "Container orchestration, multi-stage builds, and security best practices.",
-    chips: ["Docker", "Docker Compose", "Container Security"],
+      "Orchestration de conteneurs, builds multi-stage et bonnes pratiques de sécurité.",
+    chips: ["Docker", "Docker Compose", "Sécurité des conteneurs"],
   },
 
   {
     icon: <FileTerminal />,
-    title: "Automation & Scripting",
+    title: "Automatisation & scripting",
     description:
-      "Infrastructure automation, deployment scripts, and process orchestration.",
+      "Automatisation d'infrastructure, scripts de déploiement et orchestration de processus.",
     chips: ["Bash/Shell", "Python", "YAML/JSON"],
   },
 ];
@@ -57,7 +57,7 @@ export default function Tools() {
           as="h2"
           className="about-title-sour-gummy text-3xl md:text-4xl text-[#e63946] text-center mb-12"
         >
-          Tools & Technologies
+          Outils & technologies
         </Reveal>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">

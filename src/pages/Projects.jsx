@@ -9,18 +9,18 @@ const projects = [
   {
     id: "devops-portfolio",
     image: portfolioImage,
-    alt: "Personal portfolio with DevOps and full-stack projects",
-    title: "Personal Portfolio",
+    alt: "Portfolio personnel avec projets DevOps et full-stack",
+    title: "Portfolio personnel",
     challenge:
-      "Build a personal portfolio that feels polished, fast, and clear while presenting development, DevOps, and security skills in one place.",
+      "Construire un portfolio personnel soigné, rapide et clair, qui présente au même endroit mes compétences en développement, DevOps et sécurité.",
     contribution: [
-      "Built a responsive React and Vite interface with reusable sections, animated reveals, and optimized visual assets.",
-      "Added automated quality checks with GitHub Actions, tests, linting, and SonarCloud-oriented project structure.",
-      "Organized skills, certifications, awards, and projects into a clean portfolio flow with smooth section navigation.",
+      "Création d'une interface responsive avec React et Vite, sections réutilisables, animations d'apparition et assets visuels optimisés.",
+      "Ajout de contrôles qualité automatisés avec GitHub Actions, tests, linting et structure adaptée à SonarCloud.",
+      "Organisation des compétences, certifications, distinctions et projets dans un parcours clair avec une navigation fluide entre les sections.",
     ],
     impact: [
-      "Delivered a portfolio that can evolve as new projects and certifications are added.",
-      "Improved performance through lazy-loaded sections.",
+      "Un portfolio prêt à évoluer au fil des nouveaux projets et certifications.",
+      "Meilleures performances grâce au chargement lazy des sections.",
     ],
     githubUrl: "https://github.com/ClaudineRas02/Portfolio",
     chips: ["React", "TailwindCSS", "GitHub Actions", "SonarCloud", "Vercel"],
@@ -28,21 +28,21 @@ const projects = [
   {
     id: "numicamp-platform",
     image: numicampImage,
-    alt: "NumiCamp digital orientation platform dashboard",
-    title: "NumiCamp Platform",
+    alt: "Tableau de bord de la plateforme d'orientation numérique NumiCamp",
+    title: "Plateforme NumiCamp",
     challenge:
-      "Build a scalable backend platform helping young people discover digital careers, organizations, and learning opportunities through a centralized and community-driven system.",
+      "Construire une plateforme backend scalable pour aider les jeunes à découvrir les métiers du numérique, les organisations et les opportunités d'apprentissage via un système centralisé et porté par la communauté.",
     contribution: [
-      "Designed and developed backend features using Node.js, Express, and MySQL with a layered architecture (routes, services, models, middleware).",
-      "Implemented REST APIs for authentication, publications, organizations, comments, feedback systems, and profile management.",
-      "Improved backend reliability with ESLint standards, Jest unit tests, error handling practices, and SonarCloud static analysis.",
-      "Built CI/CD pipelines with GitLab CI for linting, testing, quality analysis, and Docker image generation.",
-      "Worked on deployment-oriented infrastructure using HAProxy load balancing, keepalived, nginx, NFS in a Linux network lab environment.",
+      "Conception et développement de fonctionnalités backend avec Node.js, Express et MySQL, en architecture en couches (routes, services, modèles, middleware).",
+      "Mise en place d'API REST pour l'authentification, les publications, les organisations, les commentaires, les retours utilisateurs et la gestion de profils.",
+      "Renforcement de la fiabilité backend avec les standards ESLint, des tests unitaires Jest, une meilleure gestion d'erreurs et l'analyse statique SonarCloud.",
+      "Création de pipelines CI/CD avec GitLab CI pour le linting, les tests, l'analyse qualité et la génération d'images Docker.",
+      "Travail sur une infrastructure orientée déploiement avec load balancing HAProxy, keepalived, nginx et NFS dans un environnement de lab réseau Linux.",
     ],
     impact: [
-      "Strengthened understanding of secure backend development, especially authentication with JSON Web Tokens (JWT), role-based access control, and protected API routes.",
-      "Improved collaboration workflow between backend and frontend development through API integration, testing, and debugging.",
-      "Explored Linux network lab environments using HAProxy and shared storage systems, learning the challenges of synchronization, consistency, and multi-server infrastructure management.",
+      "Meilleure maîtrise du développement backend sécurisé, surtout l'authentification JWT, le contrôle d'accès par rôles et les routes API protégées.",
+      "Collaboration backend/frontend plus fluide grâce à l'intégration d'API, aux tests et au débogage.",
+      "Exploration d'environnements réseau Linux avec HAProxy et stockage partagé, avec une vraie compréhension des enjeux de synchronisation, de cohérence et de gestion multi-serveurs.",
     ],
     githubUrl: "https://gitlab.com/numicamp-infra",
     chips: [
@@ -55,25 +55,25 @@ const projects = [
       "GitLab CI/CD",
       "Docker",
       "HAProxy",
-      "Load Balancing",
-      "Https",
+      "Load balancing",
+      "HTTPS",
     ],
   },
   {
     id: "certmanager-mobile",
     image: certManagerImage,
-    alt: "Mobile SSL/TLS certificate management application",
-    title: "SSL/TLS Certificate Manager",
+    alt: "Application mobile de gestion de certificats SSL/TLS",
+    title: "Gestionnaire de certificats SSL/TLS",
     challenge:
-      "Certificate workflows can become difficult to follow when generation, expiration, revocation, and CA hierarchy are managed manually.",
+      "Les workflows de certificats deviennent vite difficiles à suivre quand la génération, l'expiration, la révocation et la hiérarchie des CA sont gérées manuellement.",
     contribution: [
-      "Developed backend APIs for SSL/TLS certificate generation using OpenSSL integration with Node.js and Express.",
-      "Implemented Root CA and Intermediate CA management, certificate signing workflows, import/export, and certificate file upload/download handling.",
-      "Built features for certificate listing, CA trust chain visualization, revocation management, and expiration tracking using PostgreSQL.",
+      "Développement d'API backend pour générer des certificats SSL/TLS via l'intégration d'OpenSSL avec Node.js et Express.",
+      "Mise en place de la gestion des Root CA et Intermediate CA, des workflows de signature, de l'import/export et de l'upload/download de fichiers de certificats.",
+      "Création de fonctionnalités pour lister les certificats, visualiser la chaîne de confiance CA, gérer les révocations et suivre les expirations avec PostgreSQL.",
     ],
     impact: [
-      "Improved understanding of TLS/SSL certificates, PKI architecture, certificate revocation, CSR workflows, and CA trust chains.",
-      "Gained practical experience using OpenSSL with Node.js to generate, sign, store, and manage certificates through backend APIs.",
+      "Meilleure compréhension des certificats TLS/SSL, de l'architecture PKI, de la révocation, des workflows CSR et des chaînes de confiance CA.",
+      "Expérience pratique avec OpenSSL et Node.js pour générer, signer, stocker et gérer des certificats via des API backend.",
     ],
     githubUrl: "https://github.com/ClaudineRas02/pki-backend",
     chips: ["React Native", "Node.js", "Express", "PostgreSQL", "OpenSSL"],
@@ -105,7 +105,7 @@ export default function Projects() {
             as="h2"
             className="about-title-sour-gummy mb-10 text-center text-4xl text-[#e63946] md:text-5xl"
           >
-            Projects
+            Projets
           </Reveal>
 
           <div className="grid justify-items-center gap-8 md:grid-cols-2 xl:grid-cols-3">
@@ -126,7 +126,7 @@ export default function Projects() {
                       className="absolute bottom-3 right-3 inline-flex items-center gap-1.5 rounded-full border border-[#e63946] bg-[#0d1117]/90 px-3 py-1.5 text-[0.7rem] font-semibold uppercase tracking-wide text-[#e63946] backdrop-blur transition hover:bg-[#e63946] hover:text-white"
                       onClick={() => setSelectedProject(project)}
                     >
-                      Full details
+                      Détails
                       <ExternalLink size={13} />
                     </button>
                   </div>
@@ -176,12 +176,12 @@ export default function Projects() {
                   rel="noreferrer"
                   className="rounded-full border border-[#f8e7cc] px-5 py-2 text-sm font-semibold text-[#f8e7cc] transition hover:bg-[#f8e7cc] hover:text-[#171729]"
                 >
-                  View repo
+                  Voir le repo
                 </a>
 
                 <button
                   type="button"
-                  aria-label="Close project details"
+                  aria-label="Fermer les détails du projet"
                   className="text-[#f8e7cc] transition hover:text-[#e63946]"
                   onClick={() => setSelectedProject(null)}
                 >
@@ -201,7 +201,7 @@ export default function Projects() {
               <div className="space-y-6 border-[#f8e7cc] md:border-r md:pr-8">
                 <div>
                   <h4 className="about-title-sour-gummy text-2xl text-[#f8e7cc]">
-                    The Challenge
+                    Le défi
                   </h4>
                   <p className="mt-3 leading-8 text-gray-100">
                     {selectedProject.challenge}
@@ -210,7 +210,7 @@ export default function Projects() {
 
                 <div>
                   <h4 className="about-title-sour-gummy text-2xl text-[#f8e7cc]">
-                    My Contribution
+                    Ma contribution
                   </h4>
                   <ul className="mt-3 list-disc space-y-2 pl-5 leading-7 text-gray-100">
                     {selectedProject.contribution.map((item) => (
@@ -221,7 +221,7 @@ export default function Projects() {
 
                 <div>
                   <h4 className="about-title-sour-gummy text-2xl text-[#f8e7cc]">
-                    Results & Impact
+                    Résultats & impact
                   </h4>
                   <ul className="mt-3 list-disc space-y-2 pl-5 leading-7 text-gray-100">
                     {selectedProject.impact.map((item) => (

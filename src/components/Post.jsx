@@ -11,7 +11,7 @@ export default function Post({
       <div className="flex h-full flex-col md:block">
         <button
           type="button"
-          aria-label={`Open ${alt} in full view`}
+          aria-label={`Ouvrir ${alt} en grand`}
           onClick={onImageClick}
           className="group block w-full cursor-zoom-in md:block"
         >

@@ -11,42 +11,42 @@ const certificates = [
   {
     id: "Linux Essentials",
     image: linuxCert,
-    alt: "Linux Essentials Certification by Linux Professional Institute",
-    title: "Linux Fundamentals",
+    alt: "Certification Linux Essentials du Linux Professional Institute",
+    title: "Fondamentaux Linux",
     description:
-      "International certification issued by the Linux Professional Institute, demonstrating strong foundations in Linux systems, command-line usage, file management, and basic security.",
+      "Certification internationale délivrée par le Linux Professional Institute, qui valide de bonnes bases en systèmes Linux, ligne de commande, gestion de fichiers et sécurité de base.",
     scoreImage: linuxScore,
-    scoreAlt: "Linux Essentials score report",
+    scoreAlt: "Relevé de score Linux Essentials",
   },
   {
     id: "DevOps",
     image: devopsCert,
-    alt: "DevOps and CI/CD Training Certificate",
-    title: "DevOps Fundamentals",
+    alt: "Certificat de formation DevOps et CI/CD",
+    title: "Fondamentaux DevOps",
     description:
-      "Introduces core DevOps concepts including CI/CD pipelines, version control with GitLab, and automated application deployment. Highlighting team coordination challenges.",
+      "Introduction aux concepts clés du DevOps : pipelines CI/CD, gestion de version avec GitLab et déploiement automatisé d'applications, avec un focus sur la coordination en équipe.",
   },
   {
     id: "problem-solving",
     image: problemSolvingCert,
-    alt: "Certificate in problem solving",
+    alt: "Certificat en résolution de problèmes",
     title: (
       <>
-        Problem
+        Résolution
         <br />
-        Solving
+        de problèmes
       </>
     ),
     description:
-      "Covers fundamental problem-solving techniques including algorithmic thinking, pattern recognition, and logical modeling.Focused on building strong analytical foundations through structured practice and applied exercises.",
+      "Couvre les bases de la résolution de problèmes : pensée algorithmique, reconnaissance de patterns et modélisation logique. Axé sur des bases analytiques solides grâce à une pratique structurée et des exercices appliqués.",
   },
   {
     id: "python-development",
     image: pythonCert,
-    alt: "Certificate in Python programming",
-    title: "Python Development",
+    alt: "Certificat en programmation Python",
+    title: "Développement Python",
     description:
-      "Validates foundational Python skills for scripting, automation, and backend development.Built on practical exercises and structured training to ensure reliable and scalable coding practices.",
+      "Valide les bases de Python pour le scripting, l'automatisation et le développement backend. Formation structurée autour d'exercices pratiques pour coder de manière fiable et scalable.",
   },
 ];
 
@@ -101,7 +101,7 @@ export default function Certificates() {
                         })
                       }
                     >
-                      See score
+                      Voir le score
                     </button>
                   ) : null}
                 </Post>
@@ -119,11 +119,11 @@ export default function Certificates() {
         >
           <button
             type="button"
-            aria-label="Close preview"
+            aria-label="Fermer l'aperçu"
             className="absolute right-5 top-5 rounded-full border border-gray-400 px-3 py-1 text-sm text-white hover:border-[#e63946] hover:text-[#e63946]"
             onClick={() => setSelectedImage(null)}
           >
-            Close
+            Fermer
           </button>
 
           <img

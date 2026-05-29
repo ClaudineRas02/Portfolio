@@ -6,7 +6,7 @@ const Hero = () => {
   className="flex flex-col items-center justify-center text-center pt-32 pb-10 bg-[#0d1117] text-white px-4"
 >
   <Reveal as="p" className="text-sm sm:text-base text-gray-400 mb-2">
-    Hello, I'm
+    Bonjour, je suis
   </Reveal>
 
   <Reveal
@@ -18,7 +18,7 @@ const Hero = () => {
   </Reveal>
 
   <Reveal as="h2" delay={240} className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-8">
-    DevOps Engineer | Backend Developer
+    Ingénieure DevOps | Développeuse Backend
   </Reveal>
 
 </section>

@@ -29,7 +29,7 @@ export default function About() {
           <div className="flex w-full max-w-sm items-end justify-center overflow-visible bg-transparent sm:max-w-md md:max-w-lg">
             <img
               src={mePic}
-              alt="Claudine portrait"
+              alt="Portrait de Claudine"
               loading="lazy"
               decoding="async"
               className="h-auto w-auto max-w-full max-h-[36rem] object-contain sm:max-h-[42rem] md:max-h-[47rem] lg:max-h-[50rem]"
@@ -44,60 +44,65 @@ export default function About() {
             as="h2"
             className="about-title-sour-gummy mb-4 md:mb-5 text-4xl md:text-5xl text-[#e63946]"
           >
-            About Me
+            À propos de moi
           </Reveal>
           <Reveal delay={120}>
             <Card
               descriptionClassName="text-base md:text-lg leading-8 text-gray-300"
               icon={<UserRound />}
-              title="Who Am I"
+              title="Qui suis-je ?"
               description={
                 <>
-                  I am a{" "}
+                  Je suis étudiante en{" "}
                   <span className="about-title-sour-gummy font-bold text-[#e63946]">
-                    third-year
+                    troisième année
                   </span>{" "}
-                  Computer Science student at ENI Fianarantsoa with a strong
-                  interest in systems architecture, backend development, and{" "}
+                  d&apos;informatique à l&apos;ENI Fianarantsoa, avec un vrai
+                  intérêt pour l&apos;architecture système, le développement
+                  backend et{" "}
                   <span className="about-title-sour-gummy font-bold text-[#e63946]">
-                    infrastructure engineering
+                    l&apos;ingénierie d&apos;infrastructure
                   </span>
-                  . I enjoy understanding how applications work behind the
-                  scenes, from{" "}
+                  . J&apos;aime comprendre comment les applications tournent en
+                  coulisses, depuis les{" "}
                   <span className="about-title-sour-gummy font-bold text-[#e63946]">
-                    Linux systems
+                    systèmes Linux
                   </span>
-                  , networking, and databases to backend logic and{" "}
+                  , le réseau et les bases de données jusqu&apos;à la logique
+                  backend et{" "}
                   <span className="about-title-sour-gummy font-bold text-[#e63946]">
-                    automation
+                    l&apos;automatisation
                   </span>
                   .
                   <br />
-                  <br />I ranked in the{" "}
+                  <br />
+                  Lors de ma première participation à la Huawei ICT Competition
+                  au niveau national, je me suis classée dans le{" "}
                   <span className="about-title-sour-gummy font-bold text-[#e63946]">
-                    Top 10 nationwide
+                    Top 10 national
                   </span>{" "}
-                  in the Huawei ICT Competition (National Level) on my first
-                  attempt. This experience sharpened my discipline, resilience,
-                  and ability to perform under pressure.
+                  . Cette expérience a renforcé ma discipline, ma résilience et
+                  ma capacité à rester performante sous pression.
                   <br />
-                  <br />I am also a finalist in our school&apos;s 2025{" "}
+                  <br />
+                  Je suis aussi finaliste des tournois 2025 de{" "}
                   <span className="about-title-sour-gummy font-bold text-[#e63946]">
-                    competitive programming
+                    programmation compétitive
                   </span>{" "}
-                  tournaments, which strengthened my problem-solving and
-                  analytical thinking.
+                  de mon école, ce qui a boosté ma façon d&apos;analyser les
+                  problèmes et de trouver des solutions.
                   <br />
-                  And in may 2026, I earned{" "}
+                  Et en mai 2026, j&apos;ai obtenu la{" "}
                   <span className="about-title-sour-gummy font-bold text-[#e63946]">
-                    2nd place in algorithmics
+                    2e place en algorithmique
                   </span>{" "}
-                  in a competition organized by EMIT STEM HUB, reinforcing my
-                  ability to solve complex problems under time pressure.
+                  lors d&apos;une compétition organisée par EMIT STEM HUB, une
+                  belle confirmation de ma capacité à résoudre des problèmes
+                  complexes avec un temps limité.
                   <br />
                   <br />
-                  Currently, I am developing practical skills in Linux, backend,
-                  and DevOps practices. <br />
+                  Aujourd&apos;hui, je continue à renforcer mes compétences
+                  pratiques en Linux, backend et DevOps. <br />
                 </>
               }
             />

@@ -5,20 +5,20 @@ import Home from "./Home.jsx";
 describe("Home - Modal Connect", () => {
   it("should open ConnectPopup when button is clicked", () => {
     render(<Home />);
-    fireEvent.click(screen.getByText(/Let's Connect/i));
+    fireEvent.click(screen.getByText(/On échange/i));
     expect(screen.getByText("Claudine Rasamimanana")).toBeInTheDocument();
   });
 
   it("should close modal when close button is clicked", () => {
     render(<Home />);
-    fireEvent.click(screen.getByText(/Let's Connect/i));
-    fireEvent.click(screen.getByLabelText("Close"));
+    fireEvent.click(screen.getByText(/On échange/i));
+    fireEvent.click(screen.getByLabelText("Fermer"));
     expect(screen.queryByText("Claudine Rasamimanana")).not.toBeInTheDocument();
   });
 
   it("should close modal when backdrop is clicked", () => {
     const { container } = render(<Home />);
-    fireEvent.click(screen.getByText(/Let's Connect/i));
+    fireEvent.click(screen.getByText(/On échange/i));
     fireEvent.click(container.querySelector('[role="presentation"]'));
     expect(screen.queryByText("Claudine Rasamimanana")).not.toBeInTheDocument();
   });

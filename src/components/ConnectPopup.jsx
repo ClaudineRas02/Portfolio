@@ -16,7 +16,7 @@ export default function ConnectPopup({ onClose }) {
         </div>
         <button
           type="button"
-          aria-label="Close"
+          aria-label="Fermer"
           onClick={onClose}
           className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/10 text-gray-300 transition hover:border-[#e63946]/40 hover:text-[#e63946]"
         >
@@ -26,7 +26,7 @@ export default function ConnectPopup({ onClose }) {
 
       <div className="mt-5 flex items-center gap-2 text-[11px] uppercase tracking-[0.28em] text-gray-500">
         <span className="h-2 w-2 rounded-full bg-[#e63946]" />
-        Available for opportunities
+        Ouverte aux opportunités
       </div>
 
       <div className="mt-6 grid gap-4 sm:grid-cols-2">

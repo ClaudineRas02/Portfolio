@@ -9,15 +9,15 @@ describe("Navbar", () => {
 
   it("should render all navigation links", () => {
     render(<Navbar />);
-    expect(screen.getByText("Home")).toBeInTheDocument();
-    expect(screen.getByText("About")).toBeInTheDocument();
-    expect(screen.getByText("Skills")).toBeInTheDocument();
+    expect(screen.getByText("Accueil")).toBeInTheDocument();
+    expect(screen.getByText("À propos")).toBeInTheDocument();
+    expect(screen.getByText("Compétences")).toBeInTheDocument();
   });
 
   it("should highlight active link based on hash", () => {
     window.location.hash = "#home";
     render(<Navbar />);
-    const homeLink = screen.getByText("Home").closest("a");
+    const homeLink = screen.getByText("Accueil").closest("a");
     expect(homeLink).toHaveClass("text-[#e63946]");
   });
 
@@ -27,7 +27,7 @@ describe("Navbar", () => {
     window.dispatchEvent(new HashChangeEvent("hashchange"));
 
     await waitFor(() => {
-      const skillsLink = screen.getByText("Skills").closest("a");
+      const skillsLink = screen.getByText("Compétences").closest("a");
       expect(skillsLink).toHaveClass("text-[#e63946]");
     });
   });
@@ -35,13 +35,13 @@ describe("Navbar", () => {
   it("should set default hash to home if no hash provided", () => {
     window.location.hash = "";
     render(<Navbar />);
-    const homeLink = screen.getByText("Home").closest("a");
+    const homeLink = screen.getByText("Accueil").closest("a");
     expect(homeLink).toHaveClass("text-[#e63946]");
   });
 
   it("should have correct href attributes", () => {
     render(<Navbar />);
-    expect(screen.getByText("Home")).toHaveAttribute("href", "#home");
-    expect(screen.getByText("Skills")).toHaveAttribute("href", "#tools");
+    expect(screen.getByText("Accueil")).toHaveAttribute("href", "#home");
+    expect(screen.getByText("Compétences")).toHaveAttribute("href", "#tools");
   });
 });

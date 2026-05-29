@@ -11,18 +11,18 @@ export default function Resume() {
           <Reveal delay={360}>
             <Card
               icon={<Brain />}
-              title="Curiosity"
-              description="I love exploring how systems work behind the scenes — from backend architecture and
-                         databases to infrastructure and CI/CD — and figuring out how everything connects and scales."
+              title="Curiosité"
+              description="J'aime comprendre comment les systèmes fonctionnent en coulisses, de l'architecture backend
+                         et des bases de données jusqu'à l'infrastructure et la CI/CD, pour voir comment tout se connecte et passe à l'échelle."
             />
           </Reveal>
 
           <Reveal delay={480}>
             <Card
               icon={<HeartPulse />}
-              title="Sharing & Growth"
-              description="I enjoy mentoring, joining tech clubs, attending talks, 
-                        and competing in programming challenges to learn, grow, and share knowledge with others."
+              title="Partage & progression"
+              description="J'aime mentorer, participer à des clubs tech, suivre des talks
+                        et relever des défis de programmation pour apprendre, progresser et partager avec les autres."
             />
           </Reveal>
         </div>

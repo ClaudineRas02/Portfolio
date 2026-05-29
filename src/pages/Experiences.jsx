@@ -5,47 +5,47 @@ import Reveal from "../components/Reveal";
 const experiences = [
   {
     id: "devops-projects",
-    role: "DevOps Engineer Projects",
-    company: "Personal Lab / Team Projects",
-    period: "2025 - Present",
+    role: "Projets d'ingénierie DevOps",
+    company: "Lab personnel / Projets d'équipe",
+    period: "2025 - aujourd'hui",
     summary:
-      "Building secure CI/CD workflows and repeatable deployment pipelines with Linux-first tooling. Focused on reliability, observability, and automation across environments.",
+      "Construction de workflows CI/CD sécurisés et de pipelines de déploiement reproductibles avec des outils orientés Linux. Focus sur la fiabilité, l'observabilité et l'automatisation entre environnements.",
     icon: <Briefcase size={22} />,
     highlights: [
       { title: "CI/CD", subtitle: "GitHub Actions pipelines" },
-      { title: "Security", subtitle: "Hardening & checks" },
-      { title: "Observability", subtitle: "Monitoring & alerts" },
-      { title: "Collaboration", subtitle: "Team delivery flow" },
+      { title: "Sécurité", subtitle: "Hardening & contrôles" },
+      { title: "Observabilité", subtitle: "Monitoring & alertes" },
+      { title: "Collaboration", subtitle: "Livraison en équipe" },
     ],
   },
   {
     id: "backend-systems",
-    role: "Backend & Systems Internship",
+    role: "Stage backend & systèmes",
     company: "Youth Computing",
-    period: "sep 2025 - dec 2025",
+    period: "sept. 2025 - déc. 2025",
     summary:
-      "Designing backend services and infrastructure components with strong foundations in system design and databases. Emphasis on clean architecture and maintainable services.",
+      "Conception de services backend et de composants d'infrastructure avec de solides bases en design système et bases de données. L'accent est mis sur une architecture propre et des services maintenables.",
     icon: <Briefcase size={22} />,
     highlights: [
-      { title: "Backend APIs", subtitle: "Service architecture" },
-      { title: "Automation", subtitle: "Scripts & tooling" },
-      { title: "Performance", subtitle: "Debugging & tuning" },
-      { title: "Teamwork", subtitle: "Peer collaboration" },
+      { title: "API backend", subtitle: "Architecture de services" },
+      { title: "Automatisation", subtitle: "Scripts & outils" },
+      { title: "Performance", subtitle: "Débogage & optimisation" },
+      { title: "Travail d'équipe", subtitle: "Collaboration entre pairs" },
     ],
   },
   {
     id: "c3lf-mentor-treasurer",
-    role: "Mentor & Treasurer",
+    role: "Mentore & trésorière",
     company: "C3LF - Club Linux et Logiciels Libres de Fianarantsoa",
-    period: "2025 - Present",
+    period: "2025 - aujourd'hui",
     summary:
-      "Supporting students in discovering open source, Linux, and collaborative development practices. I help organize club activities, mentor members on practical projects, and contribute to the club's structure as treasurer.",
+      "Accompagnement des étudiants dans la découverte de l'open source, de Linux et des pratiques de développement collaboratif. J'aide à organiser les activités du club, je mentore les membres sur des projets concrets et je contribue à la structure du club en tant que trésorière.",
     icon: <Briefcase size={22} />,
     highlights: [
-      { title: "Mentorship", subtitle: "Open-source onboarding" },
-      { title: "Linux", subtitle: "Hands-on guidance" },
-      { title: "Community", subtitle: "Workshops & events" },
-      { title: "Treasury", subtitle: "Club financial follow-up" },
+      { title: "Mentorat", subtitle: "Onboarding open source" },
+      { title: "Linux", subtitle: "Accompagnement pratique" },
+      { title: "Communauté", subtitle: "Ateliers & événements" },
+      { title: "Trésorerie", subtitle: "Suivi financier du club" },
     ],
   },
 ];
@@ -61,7 +61,7 @@ export default function Experience() {
           as="h2"
           className="about-title-sour-gummy text-center text-5xl text-[#e63946] md:text-6xl"
         >
-          Experiences
+          Expériences
         </Reveal>
 
         <div className="mt-12 space-y-8">
