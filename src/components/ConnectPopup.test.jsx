@@ -10,7 +10,7 @@ describe("ConnectPopup", () => {
 
   it("should render availability status", () => {
     render(<ConnectPopup onClose={jest.fn()} />);
-    expect(screen.getByText("Available for opportunities")).toBeInTheDocument();
+    expect(screen.getByText("Ouverte aux opportunités")).toBeInTheDocument();
   });
 
   it("should render all contact options", () => {
@@ -25,7 +25,7 @@ describe("ConnectPopup", () => {
   it("should call onClose when close button is clicked", () => {
     const mockOnClose = jest.fn();
     render(<ConnectPopup onClose={mockOnClose} />);
-    fireEvent.click(screen.getByLabelText("Close"));
+    fireEvent.click(screen.getByLabelText("Fermer"));
     expect(mockOnClose).toHaveBeenCalled();
   });
 

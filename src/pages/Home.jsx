@@ -24,14 +24,14 @@ export default function Home() {
 
         <section className="bg-[#0d1117] flex justify-center gap-6 pb-10">
           <Mybutton
-            content={"Let's Connect →"}
+            content={"On échange ? →"}
             onClick={() => setIsConnectOpen(true)}
           />
           <a
             href="cv/CV_Claudine.pdf"
             className="inline-flex items-center gap-2 px-5 py-2 sm:px-6 sm:py-3 bg-[#e63946] hover:bg-[#e63946] rounded-lg transition"
           >
-            <span>Download CV</span>
+            <span>Télécharger le CV</span>
             <Download size={18} />
           </a>
         </section>

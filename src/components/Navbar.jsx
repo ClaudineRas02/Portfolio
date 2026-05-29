@@ -33,17 +33,17 @@ const Navbar = () => {
         <ul className="flex gap-10 text-sm font-medium">
           <li>
             <a href="#home" className={linkClass("#home")}>
-              Home
+              Accueil
             </a>
           </li>
           <li className="hidden md:flex">
             <a href="#about" className={linkClass("#about")}>
-              About
+              À propos
             </a>
           </li>
           <li>
             <a href="#tools" className={linkClass("#tools")}>
-              Skills
+              Compétences
             </a>
           </li>
           <li>
@@ -53,17 +53,17 @@ const Navbar = () => {
           </li>
           <li>
             <a href="#projects" className={linkClass("#projects")}>
-              Projects
+              Projets
             </a>
           </li>
           <li>
             <a href="#awards" className={linkClass("#awards")}>
-              Awards
+              Distinctions
             </a>
           </li>
           <li>
             <a href="#experience" className={linkClass("#experience")}>
-              Experiences
+              Expériences
             </a>
           </li>
         </ul>

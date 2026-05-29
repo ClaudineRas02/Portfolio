@@ -9,7 +9,7 @@ const awards = [
     icon: <Medal size={22} />,
     title: "ENI Fianarantsoa AlgoBattle",
     description:
-      "Finalist in the ENI Internal Competitive Programming Tournament (L2+), ranking among the top performers in a competition of 20+ highly skilled participants.",
+      "Finaliste du tournoi interne de programmation compétitive de l'ENI (L2+), avec un classement parmi les meilleurs participants sur plus de 20 profils très solides.",
   },
 
   {
@@ -18,15 +18,15 @@ const awards = [
     icon: <Award size={22} />,
     title: "Huawei ICT Competition",
     description:
-      "Top 10 nationwide on my first attempt, after completing 1000+ pages of networking and systems study with practical labs, among 100+ competitors from universities across Madagascar.",
+      "Top 10 national dès ma première participation, après plus de 1000 pages d'étude en réseau et systèmes avec des labs pratiques, parmi plus de 100 candidats issus d'universités de Madagascar.",
   },
   {
     id: "emit-stem-hub-algo-2026",
     year: "2026",
     icon: <Medal size={22} />,
-    title: "Algorithmics Competition (EMIT STEM HUB)",
+    title: "Compétition d'algorithmique (EMIT STEM HUB)",
     description:
-      "2nd place in an algorithmics competition organized by EMIT STEM HUB, highlighting consistent problem-solving performance under competitive constraints.",
+      "2e place lors d'une compétition d'algorithmique organisée par EMIT STEM HUB, une performance qui montre ma régularité en résolution de problèmes sous contraintes.",
   },
 ];
 
@@ -41,7 +41,7 @@ export default function Awards() {
           as="h2"
           className="about-title-sour-gummy text-center text-5xl text-[#e63946] md:text-6xl"
         >
-          Awards
+          Distinctions
         </Reveal>
 
         <div className="relative mx-auto mt-14 w-full max-w-5xl">

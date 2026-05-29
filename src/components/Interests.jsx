@@ -11,7 +11,7 @@ export default function Interests() {
           as="h2"
           className="about-title-sour-gummy text-3xl md:text-4xl text-[#e63946] text-center mb-12"
         >
-          Interests & Knowledges
+          Centres d'intérêt & savoir-faire
         </Reveal>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -19,16 +19,16 @@ export default function Interests() {
           <Reveal delay={80}>
             <Card
               icon={<Server />}
-              title="Backend Development"
-              description="Building scalable and secure server-side applications."
+              title="Développement backend"
+              description="Construire des applications serveur scalables et sécurisées."
             />
           </Reveal>
 
           <Reveal delay={160}>
             <Card
               icon={<Database />}
-              title="Database Management"
-              description="Designing optimized relational and NoSQL databases."
+              title="Gestion de bases de données"
+              description="Concevoir des bases relationnelles et NoSQL bien optimisées."
             />
           </Reveal>
 
@@ -36,15 +36,15 @@ export default function Interests() {
             <Card
               icon={<Cloud />}
               title="DevOps"
-              description="Deploying and managing applications with CI/CD pipelines."
+              description="Déployer et gérer des applications avec des pipelines CI/CD."
             />
           </Reveal>
 
           <Reveal delay={320}>
             <Card
               icon={<ShieldCheck />}
-              title="Web Security"
-              description="OWASP basics, XSS prevention, SQL injection prevention, and secure coding practices."
+              title="Sécurité web"
+              description="Bases OWASP, prévention XSS, injections SQL et bonnes pratiques de code sécurisé."
             />
           </Reveal>
         </div>
