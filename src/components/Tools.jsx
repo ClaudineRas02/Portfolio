@@ -6,17 +6,17 @@ import Reveal from "./Reveal";
 const tools = [
   {
     icon: <FaGithub />,
-    title: "Git & GitHub",
+    title: "Git & GitHub & GitLab",
     description:
       "Workflows Git avancés, GitHub Actions et bonnes pratiques de développement collaboratif.",
     chips: [
       "Git",
       "GitHub Actions",
+      "GitLab CI/CD",
       "Politiques de branches",
       "Workflows collaboratifs",
     ],
   },
-
   {
     icon: <Server />,
     title: "Développement backend",
