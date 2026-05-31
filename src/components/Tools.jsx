@@ -22,7 +22,14 @@ const tools = [
     title: "Développement backend",
     description:
       "Développement d'API backend, logique serveur et architecture de services scalable.",
-    chips: ["Node.js", "PHP", "Python"],
+    chips: [
+      "Node.js",
+      "Express",
+      "PHP",
+      "Python",
+      "API REST",
+      "MySQL/PostgreSQL",
+    ],
   },
 
   {
