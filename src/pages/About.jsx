@@ -84,21 +84,19 @@ export default function About() {
                   . Cette expérience a renforcé ma discipline, ma résilience et
                   ma capacité à rester performante sous pression.
                   <br />
-                  <br />
-                  Je suis aussi finaliste des tournois 2025 de{" "}
-                  <span className="about-title-sour-gummy font-bold text-[#e63946]">
-                    programmation compétitive
-                  </span>{" "}
-                  de mon école, ce qui a boosté ma façon d&apos;analyser les
-                  problèmes et de trouver des solutions.
-                  <br />
-                  Et en mai 2026, j&apos;ai obtenu la{" "}
+                  En mai 2026, j&apos;ai obtenu la{" "}
                   <span className="about-title-sour-gummy font-bold text-[#e63946]">
                     2e place en algorithmique
                   </span>{" "}
-                  lors d&apos;une compétition organisée par EMIT STEM HUB, une
-                  belle confirmation de ma capacité à résoudre des problèmes
-                  complexes avec un temps limité.
+                  lors d&apos;une compétition organisée par EMIT STEM HUB.
+                  <br />
+                  Et fin Juillet 2026 j&apos;ai obtenue la{" "}
+                  <span className="about-title-sour-gummy font-bold text-[#e63946]">
+                    2e place en algorithmique
+                  </span>{" "}
+                  lors d&apos;une compétition organisée par le DSA Club de l'ENI
+                  Fianarantsoa, une belle confirmation de ma capacité à résoudre
+                  des problèmes complexes avec un temps limité.
                   <br />
                   <br />
                   Aujourd&apos;hui, je continue à renforcer mes compétences
