@@ -24,9 +24,9 @@ const awards = [
     id: "emit-stem-hub-algo-2026",
     year: "2026",
     icon: <Medal size={22} />,
-    title: "Compétition d'algorithmique (EMIT STEM HUB)",
+    title: "Compétition d'algorithmique (EMIT  & ENI)",
     description:
-      "2e place lors d'une compétition d'algorithmique organisée par EMIT STEM HUB, une performance qui montre ma régularité en résolution de problèmes sous contraintes.",
+      "2e place lors d'une compétition d'algorithmique organisée par EMIT STEM HUB(mai) et le club DSA de l' ENI(août), une performance qui montre ma régularité en résolution de problèmes sous contraintes.",
   },
 ];
 
