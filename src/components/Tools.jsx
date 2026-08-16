@@ -28,7 +28,9 @@ const tools = [
       "PHP",
       "Python",
       "API REST",
+      "WebSocket",
       "MySQL/PostgreSQL",
+      "Postman API Testing",
     ],
   },
 
