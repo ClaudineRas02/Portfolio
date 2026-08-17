@@ -19,7 +19,7 @@ env:
 jobs:
   lint:
     name: Lint code #code syntax et logic analysis
-    runs-on: ubuntu-latest #img utilsé sur code runner pour le job lint
+    runs-on: ubuntu-latest #img utilisé sur code runner pour le job lint
 
     steps:
       - name: checkout repo (runner)
