@@ -62,7 +62,7 @@ export const skillGroups = [
     title: "Automatisation & scripting",
     description:
       "Automatisation d'infrastructure, scripts de déploiement et orchestration de processus.",
-    chips: ["Bash/Shell", "Python", "YAML/JSON"],
+    chips: ["Bash/Shell", "Python", "YAML/JSON", "Ansible"],
   },
 ];
 
