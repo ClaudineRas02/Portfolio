@@ -2,7 +2,9 @@ import pythonCert from "../assets/certs/python.webp";
 import problemSolvingCert from "../assets/certs/problemSolving.webp";
 import devopsCert from "../assets/certs/devops.webp";
 import linuxCert from "../assets/certs/linux.webp";
-import linuxScore from "../assets/certs/score.webp";
+import linuxScore from "../assets/certs/linuxScore.webp";
+import delfB2 from "../assets/certs/delfB2.webp";
+import delfB2Score from "../assets/certs/delfB2score.webp";
 
 const certificates = [
   {
@@ -38,6 +40,16 @@ const certificates = [
     title: "Développement Python",
     description:
       "Valide les bases de Python pour le scripting, l'automatisation et le développement backend. Formation structurée autour d'exercices pratiques pour coder de manière fiable et scalable.",
+  },
+  {
+    id: "delf-b2",
+    image: delfB2,
+    alt: "DELF B2 - diplôme en cours d'obtention",
+    title: "DELF B2",
+    description:
+      "Diplôme d'études en langue française de niveau B2. Certification attestant d'un niveau intermédiaire avancé en français. Diplôme officiel en attente de délivrance.",
+    scoreImage: delfB2Score,
+    scoreAlt: "Relevé de score DELF B2",
   },
 ];
 
