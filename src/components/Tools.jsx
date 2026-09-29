@@ -1,62 +1,6 @@
 import Card from "./Card";
-import { Container, FileTerminal, Server, ShieldCheck } from "lucide-react";
-import { FaGithub } from "react-icons/fa";
 import Reveal from "./Reveal";
-
-const tools = [
-  {
-    icon: <FaGithub />,
-    title: "Git & GitHub & GitLab",
-    description:
-      "Workflows Git avancés, GitHub Actions et bonnes pratiques de développement collaboratif.",
-    chips: [
-      "Git",
-      "GitHub Actions",
-      "GitLab CI/CD",
-      "Politiques de branches",
-      "Workflows collaboratifs",
-    ],
-  },
-  {
-    icon: <Server />,
-    title: "Développement backend",
-    description:
-      "Développement d'API backend, logique serveur et architecture de services scalable.",
-    chips: [
-      "Node.js",
-      "Express",
-      "PHP",
-      "Python",
-      "API REST",
-      "WebSocket",
-      "MySQL/PostgreSQL",
-      "Postman API Testing",
-    ],
-  },
-
-  {
-    icon: <ShieldCheck />,
-    title: "Tests & qualité de code",
-    description:
-      "Tests unitaires, linting et analyse automatique pour garder un code fiable et maintenable.",
-    chips: ["Jest", "React Testing Library", "ESLint", "SonarCloud"],
-  },
-  {
-    icon: <Container />,
-    title: "Docker & conteneurisation",
-    description:
-      "Orchestration de conteneurs, builds multi-stage et bonnes pratiques de sécurité.",
-    chips: ["Docker", "Docker Compose", "Sécurité des conteneurs"],
-  },
-
-  {
-    icon: <FileTerminal />,
-    title: "Automatisation & scripting",
-    description:
-      "Automatisation d'infrastructure, scripts de déploiement et orchestration de processus.",
-    chips: ["Bash/Shell", "Python", "YAML/JSON"],
-  },
-];
+import { skillGroups as tools } from "../data/skills";
 
 export default function Tools() {
   return (
@@ -73,7 +17,7 @@ export default function Tools() {
           {tools.map((tool, index) => (
             <Reveal key={tool.title} delay={index * 90}>
               <Card
-                icon={tool.icon}
+                icon={<tool.icon />}
                 title={
                   <span className="about-title-sour-gummy text-white">
                     {tool.title}

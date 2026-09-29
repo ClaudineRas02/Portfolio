@@ -1,6 +1,6 @@
 import Card from "./Card";
 import Reveal from "./Reveal";
-import { Server, Database, Cloud, ShieldCheck } from "lucide-react";
+import { interests } from "../data/skills";
 
 export default function Interests() {
   return (
@@ -15,38 +15,15 @@ export default function Interests() {
         </Reveal>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          
-          <Reveal delay={80}>
-            <Card
-              icon={<Server />}
-              title="Développement backend"
-              description="Construire des applications serveur scalables et sécurisées."
-            />
-          </Reveal>
-
-          <Reveal delay={160}>
-            <Card
-              icon={<Database />}
-              title="Gestion de bases de données"
-              description="Concevoir des bases relationnelles et NoSQL bien optimisées."
-            />
-          </Reveal>
-
-          <Reveal delay={240}>
-            <Card
-              icon={<Cloud />}
-              title="DevOps"
-              description="Déployer et gérer des applications avec des pipelines CI/CD."
-            />
-          </Reveal>
-
-          <Reveal delay={320}>
-            <Card
-              icon={<ShieldCheck />}
-              title="Sécurité web"
-              description="Bases OWASP, prévention XSS, injections SQL et bonnes pratiques de code sécurisé."
-            />
-          </Reveal>
+          {interests.map((interest, index) => (
+            <Reveal key={interest.id} delay={(index + 1) * 80}>
+              <Card
+                icon={<interest.icon />}
+                title={interest.title}
+                description={interest.description}
+              />
+            </Reveal>
+          ))}
         </div>
       </div>
     </section>

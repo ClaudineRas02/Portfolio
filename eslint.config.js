@@ -1,7 +1,7 @@
 import js from "@eslint/js";
 import globals from "globals";
-import pluginReact from "eslint-plugin-react";
 import { defineConfig } from "eslint/config";
+import pluginReact from "eslint-plugin-react";
 
 export default defineConfig([
   //les dossiers à ignorer
