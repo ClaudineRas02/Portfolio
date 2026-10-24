@@ -3,22 +3,9 @@ import Card from "../components/Card";
 import Icons from "../components/Icons";
 import Reveal from "../components/Reveal";
 import mePic from "../assets/mePic.png";
-import linkedinIcon from "../assets/icons/linkedin.png";
-import github from "../assets/icons/github.png";
+import { socialIcons } from "../data/socials";
 
 export default function About() {
-  {
-    /*icon list for icon components */
-  }
-  const socialIcons = [
-    { src: github, alt: "GitHub", href: "https://github.com/ClaudineRas02" },
-    {
-      src: linkedinIcon,
-      alt: "LinkedIn",
-      href: "https://www.linkedin.com/in/claudine-rasamimanana-a205a5379/",
-    },
-  ];
-
   return (
     <section
       id="about"

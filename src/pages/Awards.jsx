@@ -1,34 +1,7 @@
-import { ArrowDown, Award, Medal } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 import Card from "../components/Card";
 import Reveal from "../components/Reveal";
-
-const awards = [
-  {
-    id: "algo-2025",
-    year: "2025",
-    icon: <Medal size={22} />,
-    title: "ENI Fianarantsoa AlgoBattle",
-    description:
-      "Finaliste du tournoi interne de programmation compétitive de l'ENI (L2+), avec un classement parmi les meilleurs participants sur plus de 20 profils très solides.",
-  },
-
-  {
-    id: "huawei-2025",
-    year: "2025",
-    icon: <Award size={22} />,
-    title: "Huawei ICT Competition",
-    description:
-      "Top 10 national dès ma première participation, après plus de 1000 pages d'étude en réseau et systèmes avec des labs pratiques, parmi plus de 100 candidats issus d'universités de Madagascar.",
-  },
-  {
-    id: "emit-stem-hub-algo-2026",
-    year: "2026",
-    icon: <Medal size={22} />,
-    title: "Compétition d'algorithmique (EMIT  & ENI)",
-    description:
-      "2e place lors d'une compétition d'algorithmique organisée par EMIT STEM HUB(mai) et le club DSA de l' ENI(août), une performance qui montre ma régularité en résolution de problèmes sous contraintes.",
-  },
-];
+import { awards } from "../data/awards";
 
 export default function Awards() {
   return (
@@ -52,7 +25,7 @@ export default function Awards() {
           />
 
           <div className="space-y-10">
-            {awards.map((award, index) => (
+            {awards.map(({ icon: Icon, ...award }, index) => (
               <Reveal
                 key={award.id}
                 delay={index * 100}
@@ -69,7 +42,7 @@ export default function Awards() {
                 </div>
 
                 <Card
-                  icon={award.icon}
+                  icon={<Icon size={22} />}
                   title={award.title}
                   description={award.description}
                   className="w-full max-w-1450 border-gray-700 bg-[#131726]"
