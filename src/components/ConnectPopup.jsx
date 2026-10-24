@@ -1,4 +1,10 @@
-import { FaFacebook, FaGithub, FaLinkedin, FaPhone, FaGitlab } from "react-icons/fa6";
+import {
+  FaFacebook,
+  FaGithub,
+  FaLinkedin,
+  FaPhone,
+  FaGitlab,
+} from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 import Contact from "./Contact";
 
@@ -39,7 +45,7 @@ export default function ConnectPopup({ onClose }) {
         <Contact
           icon={<FaLinkedin size={18} />}
           label="LinkedIn"
-          sublabel="81 relations"
+          sublabel="126 relations"
           href="https://www.linkedin.com/in/claudinerasamimanana/"
           className="border-[#1f6feb]/40 bg-[#0b1f36] hover:border-[#1f6feb]"
         />
@@ -58,7 +64,7 @@ export default function ConnectPopup({ onClose }) {
         <Contact
           icon={<FaPhone size={18} />}
           label="WhatsApp"
-          sublabel="+261 32 30 775 91"
+          sublabel="+261 32 85 227 26"
         />
         <Contact
           icon={<IoIosMail size={18} />}
