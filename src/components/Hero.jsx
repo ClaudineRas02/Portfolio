@@ -20,7 +20,7 @@ const Hero = () => {
         delay={240}
         className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-8"
       >
-        Apprenti Ingénieur DevOps | Développeuse Backend
+        Apprentie Testeuse QA & Ingénieur DevOps | Développeuse Backend
       </Reveal>
     </section>
   );
