@@ -24,6 +24,7 @@ export const skillGroups = [
       "WebSocket",
       "MySQL/PostgreSQL",
       "Postman API Testing",
+      "n8n",
     ],
   },
   {

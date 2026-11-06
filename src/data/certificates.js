@@ -5,8 +5,43 @@ import linuxCert from "../assets/certs/linux.webp";
 import linuxScore from "../assets/certs/linuxScore.webp";
 import delfB2 from "../assets/certs/delfB2.webp";
 import delfB2Score from "../assets/certs/delfB2score.webp";
+import huaweiCert from "../assets/certs/huawei.png";
+import hciaOpenEuler from "../assets/certs/huawei/HCIA-openEuler V1.0 Course.png";
+import hciaOpenGauss from "../assets/certs/huawei/HCIA-openGauss V2.0 Course.png";
+import hcipOpenGauss from "../assets/certs/huawei/HCIP-openGauss V1.0 Course.png";
+import openGaussDatabase from "../assets/certs/huawei/openGauss Database Technology and Applications.png";
 
 const certificates = [
+  {
+    id: "huawei-ict-academy",
+    image: huaweiCert,
+    alt: "Certificat de fin de formation Huawei ICT Academy",
+    title: "Huawei ICT Academy",
+    description:
+      "Parcours de formation Huawei ICT Academy autour de openEuler (OS de Huawei) et openGauss (SGBD de Huawei), avec des cours de niveau HCIA (Beginner) et HCIP(Intermediate) validés par un examen.",
+    courses: [
+      {
+        id: "hcia-openeuler",
+        title: "HCIA-openEuler V1.0",
+        file: hciaOpenEuler,
+      },
+      {
+        id: "hcia-opengauss",
+        title: "HCIA-openGauss V2.0",
+        file: hciaOpenGauss,
+      },
+      {
+        id: "hcip-opengauss",
+        title: "HCIP-openGauss V1.0",
+        file: hcipOpenGauss,
+      },
+      {
+        id: "opengauss-database",
+        title: "openGauss Database Technology and Applications",
+        file: openGaussDatabase,
+      },
+    ],
+  },
   {
     id: "linux-essentials",
     image: linuxCert,
