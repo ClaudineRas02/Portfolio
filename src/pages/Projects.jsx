@@ -30,7 +30,7 @@ export default function Projects() {
         id="projects"
         className="snap-start min-h-screen scroll-mt-24 bg-[#0d1117] px-6 pb-12 pt-24 text-white"
       >
-        <div className="mx-auto max-w-6xl">
+        <div className="mx-auto max-w-7xl">
           <Reveal
             as="h2"
             className="about-title-sour-gummy mb-10 text-center text-4xl text-[#e63946] md:text-5xl"
@@ -38,10 +38,10 @@ export default function Projects() {
             Projets
           </Reveal>
 
-          <div className="grid justify-items-center gap-8 md:grid-cols-2 xl:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
             {projects.map((project, index) => (
-              <Reveal key={project.id} delay={index * 90}>
-                <article className="group flex h-full w-full max-w-3xl flex-col bg-transparent text-white md:max-w-[340px]">
+              <Reveal key={project.id} delay={index * 90} className="h-full">
+                <article className="group flex h-full w-full flex-col overflow-hidden rounded-[1.6rem] border border-gray-700 bg-transparent text-white">
                   <div className="relative overflow-hidden">
                     {project.image ? (
                       <img
@@ -68,7 +68,7 @@ export default function Projects() {
                     </button>
                   </div>
 
-                  <div className="flex flex-1 flex-col gap-3 pt-4 text-left">
+                  <div className="flex flex-1 flex-col gap-3 p-5 text-left">
                     <h3 className="about-title-sour-gummy text-2xl leading-tight text-white md:text-3xl">
                       {project.title}
                     </h3>

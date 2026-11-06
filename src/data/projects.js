@@ -50,6 +50,8 @@ export const projects = [
     image: portfolioImage,
     alt: "Portfolio personnel avec projets DevOps et full-stack",
     title: "Portfolio personnel",
+    company: "Projet personnel pour présenter mon parcours",
+    period: "2026",
     challenge:
       "Construire un portfolio personnel soigné, rapide et clair, qui présente au même endroit mes compétences en développement, DevOps et sécurité.",
     contribution: [
@@ -67,6 +69,9 @@ export const projects = [
   {
     id: "numicamp-platform",
     image: numicampImage,
+    period: "2025",
+    company: "Stage Backend Web chez Youth Computing",
+
     alt: "Tableau de bord de la plateforme d'orientation numérique NumiCamp",
     title: "Plateforme NumiCamp",
     challenge:
@@ -101,6 +106,8 @@ export const projects = [
   {
     id: "certmanager-mobile",
     image: certManagerImage,
+    company: "Projet académique ENI Fianarantsoa",
+    period: "2026",
     alt: "Application mobile de gestion de certificats SSL/TLS",
     title: "Gestionnaire de certificats SSL/TLS",
     challenge:
@@ -120,6 +127,9 @@ export const projects = [
   {
     id: "pop-quizz",
     image: popquizzImage,
+    period: "2026",
+    company: "Projet des mentors C3LF",
+
     alt: "Application de quiz Pop-Quizz avec son pipeline CI/CD et son déploiement automatisé",
     title: "Pop-Quizz",
     challenge:
