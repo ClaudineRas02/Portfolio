@@ -1,15 +1,18 @@
 import { useEffect, useState } from "react";
+import CourseList from "../components/CourseList";
 import Post from "../components/Post";
 import Reveal from "../components/Reveal";
 import certificates from "../data/certificates";
 
 export default function Certificates() {
   const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedCourses, setSelectedCourses] = useState(null);
 
   useEffect(() => {
     const onKeyDown = (event) => {
       if (event.key === "Escape") {
         setSelectedImage(null);
+        setSelectedCourses(null);
       }
     };
 
@@ -57,12 +60,29 @@ export default function Certificates() {
                       Voir le score
                     </button>
                   ) : null}
+
+                  {certificate.courses ? (
+                    <button
+                      type="button"
+                      className="rounded-full border border-[#e63946] px-4 py-2 text-xs font-semibold uppercase tracking-wide text-[#e63946] transition hover:bg-[#e63946] hover:text-white"
+                      onClick={() => setSelectedCourses(certificate)}
+                    >
+                      Voir les certificats ({certificate.courses.length})
+                    </button>
+                  ) : null}
                 </Post>
               </Reveal>
             ))}
           </div>
         </div>
       </section>
+
+      {selectedCourses ? (
+        <CourseList
+          certificate={selectedCourses}
+          onClose={() => setSelectedCourses(null)}
+        />
+      ) : null}
 
       {selectedImage ? (
         <div
