@@ -2,7 +2,49 @@ import portfolioImage from "../assets/projects/portfolio.png";
 import certManagerImage from "../assets/projects/certmanager_mobile.png";
 import numicampImage from "../assets/projects/numicamp.png";
 import popquizzImage from "../assets/projects/popquizz.png";
+import altioraImage from "../assets/projects/altiora_cm.png";
 export const projects = [
+  {
+    id: "cm-altiora",
+    isPrivate: true,
+    alt: "Couverture du projet CM Altiora",
+    title: "CM Altiora",
+    category: "Stage DevOps / QA",
+    company: "Altiora Prest",
+    period: "Depuis septembre 2026",
+    challenge:
+      "Mettre en place une chaîne de livraison automatisée pour une application web multiservice (React, Laravel, PostgreSQL, n8n), avec des environnements de préproduction et de production bien séparés, des tests à chaque étape et une infrastructure sécurisée et supervisée. L'application métier est développée par l'équipe ; mon rôle porte sur l'infrastructure, l'automatisation et la qualité.",
+    contribution: [
+      "Conception et configuration d'une infrastructure qui sépare le Runner GitLab, la PREPROD et la PROD.",
+      "Automatisation de la configuration des serveurs et des déploiements avec Ansible.",
+      "Conteneurisation et intégration des services applicatifs avec Docker Compose.",
+      "Pipelines GitLab CI/CD avec tests, contrôles qualité et publication des images.",
+      "Intégration de PHPUnit, Vitest, des outils de lint et de SonarQube Cloud dans les pipelines.",
+      "Démarche QA : matrice de tests, scénarios fonctionnels, tests API, smoke tests et contrôles de non-régression.",
+      "Gestion des versions applicatives avec des tags reliés aux commits Git.",
+      "Configuration du reverse proxy Nginx, du HTTPS/TLS et des accès via Cloudflare.",
+      "Sécurisation des configurations avec les variables GitLab, Ansible Vault et une gestion propre des secrets.",
+    ],
+    inProgress: [
+      "Mécanismes de sauvegarde, de monitoring (Netdata) et de vérification de disponibilité : mis en place en partie, encore en cours de consolidation.",
+    ],
+    impact: [
+      "Chaque livraison suit le même chemin : tests, contrôle qualité, image, puis déploiement sur l'environnement visé.",
+      "La PREPROD permet de valider une version avant qu'elle n'arrive en PROD.",
+      "Des configurations reproductibles et versionnées, sans secrets en clair dans les dépôts.",
+    ],
+    chips: [
+      "GitLab CI/CD",
+      "GitLab Runner",
+      "Docker Compose",
+      "Ansible",
+      "Nginx",
+      "SonarQube Cloud",
+      "Cloudflare",
+      "Linux",
+    ],
+    image: altioraImage,
+  },
   {
     id: "devops-portfolio",
     image: portfolioImage,
